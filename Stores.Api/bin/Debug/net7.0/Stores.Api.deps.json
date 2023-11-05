@@ -995,6 +995,8 @@
       },
       "Stores.Seeding/1.0.0": {
         "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Stores.Domain": "1.0.0",
           "Stores.Persistence": "1.0.0"
         },

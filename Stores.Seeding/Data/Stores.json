@@ -1,30 +1,117 @@
 [
   {
-    "StoreId": 0,
-    "StoreName": "SuperMart",
-    "Addresses": [
+    "storeName": "SuperMart",
+    "addresses": [
       {
-        "AddressId": 0,
-        "Country": "USA",
-        "City": "New York",
-        "Street": "Broadway",
-        "PostalCode": "10001"
+        "country": "USA",
+        "city": "New York",
+        "street": "Broadway",
+        "postalCode": "10001"
       }
     ],
-    "Administrator": {
-      "AdministratorId": 0,
-      "LastName": "Smith",
-      "PhoneNumber": "123-456-7890"
+    "administrator": {
+      "lastName": "Smith",
+      "phoneNumber": "123-456-7890"
     },
-    "StoreType": {
-      "StoreTypeId": 0,
-      "Name": "Grocery"
+    "storeType": {
+      "name": "Grocery"
     },
-    "WorkingHours": {
-      "WorkingHoursId": 0,
-      "DayOfWeek": 0,
-      "OpeningTime": "2023-11-05T08:00:00.000Z",
-      "ClosingTime": "2023-11-05T20:00:00.000Z"
+    "workingHours": {
+      "dayOfWeek": 1,
+      "openingTime": "2023-11-05T08:00:00.000Z",
+      "closingTime": "2023-11-05T20:00:00.000Z"
+    }
+  },
+  {
+    "storeName": "Fashion Avenue",
+    "addresses": [
+      {
+        "country": "UK",
+        "city": "London",
+        "street": "Oxford Street",
+        "postalCode": "W1D 1BS"
+      }
+    ],
+    "administrator": {
+      "lastName": "Johnson",
+      "phoneNumber": "987-654-3210"
+    },
+    "storeType": {
+      "name": "Clothing"
+    },
+    "workingHours": {
+      "dayOfWeek": 2,
+      "openingTime": "2023-11-05T10:00:00.000Z",
+      "closingTime": "2023-11-05T19:30:00.000Z"
+    }
+  },
+  {
+    "storeName": "TechGadgets",
+    "addresses": [
+      {
+        "country": "Germany",
+        "city": "Berlin",
+        "street": "Friedrichstraße",
+        "postalCode": "10117"
+      }
+    ],
+    "administrator": {
+      "lastName": "Schmidt",
+      "phoneNumber": "555-123-4567"
+    },
+    "storeType": {
+      "name": "Electronics"
+    },
+    "workingHours": {
+      "dayOfWeek": 3,
+      "openingTime": "2023-11-05T09:30:00.000Z",
+      "closingTime": "2023-11-05T18:00:00.000Z"
+    }
+  },
+  {
+    "storeName": "Organic Delights",
+    "addresses": [
+      {
+        "country": "Canada",
+        "city": "Toronto",
+        "street": "Yonge Street",
+        "postalCode": "M5B 2H1"
+      }
+    ],
+    "administrator": {
+      "lastName": "Lee",
+      "phoneNumber": "111-222-3333"
+    },
+    "storeType": {
+      "name": "Health Food"
+    },
+    "workingHours": {
+      "dayOfWeek": 4,
+      "openingTime": "2023-11-05T07:00:00.000Z",
+      "closingTime": "2023-11-05T21:00:00.000Z"
+    }
+  },
+  {
+    "storeName": "Books & Beyond",
+    "addresses": [
+      {
+        "country": "USA",
+        "city": "San Francisco",
+        "street": "Market Street",
+        "postalCode": "94103"
+      }
+    ],
+    "administrator": {
+      "lastName": "Miller",
+      "phoneNumber": "444-555-6666"
+    },
+    "storeType": {
+      "name": "Bookstore"
+    },
+    "workingHours": {
+      "dayOfWeek": 5,
+      "openingTime": "2023-11-05T10:00:00.000Z",
+      "closingTime": "2023-11-05T18:30:00.000Z"
     }
   }
 ]

@@ -1,10 +1,3 @@
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.csproj.AssemblyReference.cache
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfoInputs.cache
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfo.cs
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.csproj.CoreCompileInputs.cache
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\appsettings.json
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Api.exe
@@ -34,8 +27,17 @@ C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Swashbuckle.AspNetCor
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Domain.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Persistence.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Seeding.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Persistence.pdb
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Seeding.pdb
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Domain.pdb
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.csproj.AssemblyReference.cache
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfoInputs.cache
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfo.cs
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.csproj.CoreCompileInputs.cache
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\staticwebassets\msbuild.Stores.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.Stores.Api.props
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Stores.Api.props
@@ -50,5 +52,3 @@ C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\refint\Stores.Api.dll
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.pdb
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.genruntimeconfig.cache
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\ref\Stores.Api.dll
-C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Seeding.dll
-C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Seeding.pdb

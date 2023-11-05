@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GHEXxgT8V36Os9GxD5qVHfnzBV6eQdq+DTLEJu1lXM6Vax1aw0ULyVKzTiJNU+MnVKYNgqV7lQdjX45oOxGyVg==",
+  "dgSpecHash": "MPU4t6ZZGzQkSk7SoWqTiinxNU0VYh4r7CpU+jNfaE7tgoqC35rpufpRqNKFG3tiQl7k/7zcBnVE1EVLYSbePQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.13\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.13.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",

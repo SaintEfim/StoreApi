@@ -6,12 +6,14 @@ using System.IO;
 using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Stores.Seeding
 {
     public class Seeder
     {
         private readonly ApplicationDbContext _context;
+
         public Seeder(ApplicationDbContext context)
         {
             _context = context;
@@ -27,15 +29,23 @@ namespace Stores.Seeding
                 // Проверяем, существует ли файл
                 if (File.Exists(jsonFilePath))
                 {
-                    // Считываем данные из JSON-файла
-                    string jsonData = await File.ReadAllTextAsync(jsonFilePath);
+                    // Проверяем, существуют ли уже данные в базе данных
+                    if (!_context.Stores.Any())
+                    {
+                        // Считываем данные из JSON-файла
+                        string jsonData = await File.ReadAllTextAsync(jsonFilePath);
 
-                    // Десериализуем JSON в список объектов Store
-                    var stores = JsonSerializer.Deserialize<Store[]>(jsonData);
+                        // Десериализуем JSON в список объектов Store
+                        var stores = JsonSerializer.Deserialize<List<Store>>(jsonData);
 
-                    // Добавляем данные в контекст базы данных и сохраняем их
-                    _context.Stores.AddRange(stores);
-                    await _context.SaveChangesAsync();
+                        // Добавляем данные в контекст базы данных и сохраняем их, только если база данных пуста
+                        await _context.Stores.AddRangeAsync(stores);
+                        await _context.SaveChangesAsync();
+                    }
+                    else
+                    {
+                        Console.WriteLine("База данных уже содержит данные. Записи не добавлены.");
+                    }
                 }
                 else
                 {
