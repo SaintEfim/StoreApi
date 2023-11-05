@@ -1,0 +1,12 @@
+C:\Users\user\source\Store_Api\Stores.Domain\bin\Debug\net7.0\Stores.Domain.deps.json
+C:\Users\user\source\Store_Api\Stores.Domain\bin\Debug\net7.0\Stores.Domain.dll
+C:\Users\user\source\Store_Api\Stores.Domain\bin\Debug\net7.0\Stores.Domain.pdb
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.csproj.AssemblyReference.cache
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.AssemblyInfoInputs.cache
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.AssemblyInfo.cs
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.csproj.CoreCompileInputs.cache
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.dll
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\refint\Stores.Domain.dll
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\Stores.Domain.pdb
+C:\Users\user\source\Store_Api\Stores.Domain\obj\Debug\net7.0\ref\Stores.Domain.dll
