@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Stores.Api.Service
+namespace Stores.Persistence.Repository
 {
     public class StoreService : IStoreService
     {

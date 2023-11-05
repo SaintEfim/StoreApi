@@ -23,7 +23,7 @@ namespace Stores.Api.Controllers
 
         [HttpGet]
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
-        public async Task<ActionResult<List<StoreDto>>> GetStores()
+        public async Task<ActionResult<List<CreateStoreDto>>> GetStores()
         {
             var stores = await _storeRepository.GetStoresAsync();
             var storesDtos = stores.Select(x => _mapper.Map<StoreDto>(x)).ToList();

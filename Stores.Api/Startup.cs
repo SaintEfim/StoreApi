@@ -1,16 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Stores.Persistence;
 using Stores.Persistence.Repository;
 using Stores.Domain.Interfaces;
-using System.Reflection;
-using Stores.Domain.Entity;
-using Stores.Api.Service;
+using Stores.Seeding;
 
 namespace Stores.Api
 {
@@ -35,6 +28,7 @@ namespace Stores.Api
             // Добавьте сервисы репозитория
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<IStoreService, StoreService>();
+            services.AddScoped<Seeder>();
 
             // Добавьте конфигурацию Swagger
             services.AddSwaggerGen(c =>
@@ -48,6 +42,12 @@ namespace Stores.Api
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
+                using (var scope = app.ApplicationServices.CreateScope())
+                {
+                    var seeder = scope.ServiceProvider.GetRequiredService<Seeder>();
+                    seeder.SeedData().Wait();
+                }
             }
 
             app.UseRouting();

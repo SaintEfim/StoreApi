@@ -28,6 +28,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Stores.Persistence\Stores.Persistence.csproj" />
+	  <ProjectReference Include="..\Stores.Seeding\Stores.Seeding.csproj" />
   </ItemGroup>
 
 </Project>

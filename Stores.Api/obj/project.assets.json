@@ -1906,6 +1906,20 @@
         "runtime": {
           "bin/placeholder/Stores.Persistence.dll": {}
         }
+      },
+      "Stores.Seeding/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Stores.Domain": "1.0.0",
+          "Stores.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stores.Seeding.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stores.Seeding.dll": {}
+        }
       }
     }
   },
@@ -6294,6 +6308,11 @@
       "type": "project",
       "path": "../Stores.Persistence/Stores.Persistence.csproj",
       "msbuildProject": "../Stores.Persistence/Stores.Persistence.csproj"
+    },
+    "Stores.Seeding/1.0.0": {
+      "type": "project",
+      "path": "../Stores.Seeding/Stores.Seeding.csproj",
+      "msbuildProject": "../Stores.Seeding/Stores.Seeding.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6305,6 +6324,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
       "Stores.Persistence >= 1.0.0",
+      "Stores.Seeding >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -6339,6 +6359,9 @@
           "projectReferences": {
             "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj": {
               "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj"
+            },
+            "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj"
             }
           }
         }
