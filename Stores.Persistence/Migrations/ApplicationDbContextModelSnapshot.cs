@@ -32,28 +32,34 @@ namespace Stores.Persistence.Migrations
 
                     b.Property<string>("City")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "city");
 
                     b.Property<string>("Country")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "country");
 
                     b.Property<string>("PostalCode")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "postalCode");
 
                     b.Property<int>("StoreId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Street")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "street");
 
                     b.HasKey("AddressId");
 
                     b.HasIndex("StoreId");
 
                     b.ToTable("Addresses");
+
+                    b.HasAnnotation("Relational:JsonPropertyName", "addresses");
                 });
 
             modelBuilder.Entity("Stores.Domain.Entity.Administrator", b =>
@@ -66,15 +72,19 @@ namespace Stores.Persistence.Migrations
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "lastName");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "phoneNumber");
 
                     b.HasKey("AdministratorId");
 
                     b.ToTable("Administrators");
+
+                    b.HasAnnotation("Relational:JsonPropertyName", "administrator");
                 });
 
             modelBuilder.Entity("Stores.Domain.Entity.Store", b =>
@@ -90,7 +100,8 @@ namespace Stores.Persistence.Migrations
 
                     b.Property<string>("StoreName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "storeName");
 
                     b.Property<int>("StoreTypeId")
                         .HasColumnType("integer");
@@ -119,11 +130,14 @@ namespace Stores.Persistence.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("text")
+                        .HasAnnotation("Relational:JsonPropertyName", "name");
 
                     b.HasKey("StoreTypeId");
 
                     b.ToTable("StoreTypes");
+
+                    b.HasAnnotation("Relational:JsonPropertyName", "storeType");
                 });
 
             modelBuilder.Entity("Stores.Domain.Entity.WorkingHours", b =>
@@ -135,17 +149,22 @@ namespace Stores.Persistence.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WorkingHoursId"));
 
                     b.Property<DateTime>("ClosingTime")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp with time zone")
+                        .HasAnnotation("Relational:JsonPropertyName", "closingTime");
 
                     b.Property<int>("DayOfWeek")
-                        .HasColumnType("integer");
+                        .HasColumnType("integer")
+                        .HasAnnotation("Relational:JsonPropertyName", "dayOfWeek");
 
                     b.Property<DateTime>("OpeningTime")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("timestamp with time zone")
+                        .HasAnnotation("Relational:JsonPropertyName", "openingTime");
 
                     b.HasKey("WorkingHoursId");
 
                     b.ToTable("WorkingHours");
+
+                    b.HasAnnotation("Relational:JsonPropertyName", "workingHours");
                 });
 
             modelBuilder.Entity("Stores.Domain.Entity.Address", b =>

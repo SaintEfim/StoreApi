@@ -36,7 +36,6 @@ C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.GeneratedM
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfoInputs.cache
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfo.cs
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.csproj.CoreCompileInputs.cache
-C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\staticwebassets\msbuild.Stores.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.Stores.Api.props

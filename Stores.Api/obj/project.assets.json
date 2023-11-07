@@ -6325,6 +6325,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
+      "Stores.Domain >= 1.0.0",
       "Stores.Persistence >= 1.0.0",
       "Stores.Seeding >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -6359,6 +6360,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj"
+            },
             "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj": {
               "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj"
             },
