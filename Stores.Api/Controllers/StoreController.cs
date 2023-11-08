@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Stores.Api.Models.Store;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Stores.Api.Controllers
 {
@@ -22,13 +23,29 @@ namespace Stores.Api.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
         public async Task<ActionResult<List<CreateStoreDto>>> GetStores()
         {
-            var stores = await _storeRepository.GetStoresAsync();
-            var storesDtos = stores.Select(x => _mapper.Map<StoreDto>(x)).ToList();
-            return Ok(storesDtos);
+            try
+            {
+                var stores = await _storeRepository.GetStoresAsync();
+                var storesDtos = stores.Select(x => _mapper.Map<StoreDto>(x)).ToList();
+                return Ok(storesDtos);
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return StatusCode(403, "Access forbidden");
+            }
+            catch (Exception ex)
+            {
+                // Логирование ошибок, если необходимо
+                Console.WriteLine($"An error occurred: {ex.Message}");
+                return StatusCode(500, "Internal server error");
+            }
         }
+
+
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(StoreDto), 200)]

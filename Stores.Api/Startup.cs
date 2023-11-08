@@ -4,6 +4,9 @@ using Stores.Persistence;
 using Stores.Persistence.Repository;
 using Stores.Domain.Interfaces;
 using Stores.Seeding;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Stores.Api
 {
@@ -18,6 +21,22 @@ namespace Stores.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var secretKey = Configuration.GetValue<string>("ApiSettings:Secret");
+            var key = Encoding.ASCII.GetBytes(secretKey);
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.RequireHttpsMetadata = false;
+                    options.SaveToken = true;
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(key),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
 
             services.AddControllers();
             services.AddAutoMapper(typeof(Startup));
@@ -60,6 +79,7 @@ namespace Stores.Api
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Store V1");
             });
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

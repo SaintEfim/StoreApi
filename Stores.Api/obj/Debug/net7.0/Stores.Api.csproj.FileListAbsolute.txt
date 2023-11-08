@@ -51,3 +51,11 @@ C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\refint\Stores.Api.dll
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.pdb
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.genruntimeconfig.cache
 C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\ref\Stores.Api.dll
+C:\Users\user\source\Store_Api\Stores.Api\obj\Debug\net7.0\Stores.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
