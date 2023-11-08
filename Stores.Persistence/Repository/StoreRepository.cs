@@ -27,9 +27,13 @@ namespace Stores.Persistence.Repository
         }
 
         public async Task<Store> GetStoreAsync(int storeId)
-        {
-            return await _context.Stores.FirstOrDefaultAsync(s => s.StoreId == storeId);
-        }
+            => await _context.Stores
+             .Include(s => s.Addresses)
+             .Include(s => s.Administrator)
+             .Include(s => s.StoreType)
+             .Include(s => s.WorkingHours)
+             .FirstOrDefaultAsync(s => s.StoreId == storeId);
+
 
         public async Task InsertStoreAsync(Store store)
         {

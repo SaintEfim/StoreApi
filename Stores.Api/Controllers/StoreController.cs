@@ -27,27 +27,14 @@ namespace Stores.Api.Controllers
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
         public async Task<ActionResult<List<CreateStoreDto>>> GetStores()
         {
-            try
-            {
-                var stores = await _storeRepository.GetStoresAsync();
-                var storesDtos = stores.Select(x => _mapper.Map<StoreDto>(x)).ToList();
-                return Ok(storesDtos);
-            }
-            catch (UnauthorizedAccessException)
-            {
-                return StatusCode(403, "Access forbidden");
-            }
-            catch (Exception ex)
-            {
-                // Логирование ошибок, если необходимо
-                Console.WriteLine($"An error occurred: {ex.Message}");
-                return StatusCode(500, "Internal server error");
-            }
+            var stores = await _storeRepository.GetStoresAsync();
+            var storesDtos = stores.Select(x => _mapper.Map<StoreDto>(x)).ToList();
+            return Ok(storesDtos);
         }
 
 
-
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin")]
         [ProducesResponseType(typeof(StoreDto), 200)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<StoreDto>> GetStore(int id)
@@ -63,6 +50,7 @@ namespace Stores.Api.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         [ProducesResponseType(typeof(CreateResultStoreDto), 201)]
         public async Task<ActionResult> CreateStore(CreateStoreDto storeDto)
         {
