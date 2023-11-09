@@ -59,3 +59,6 @@ C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityMod
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Moq.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\nunit.framework.dll
