@@ -7,6 +7,7 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 
 namespace Stores.Seeding
 {
@@ -23,17 +24,16 @@ namespace Stores.Seeding
         {
             try
             {
-                // Путь к вашему JSON-файлу с данными
-                string jsonFilePath = "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Data\\Stores.json";
-                Console.WriteLine(jsonFilePath);
+                var appDir = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"..\..\..\..\"));
+                var fullPath = Path.Combine(Path.Combine(appDir, @"Stores.Seeding\Data\Stores.json"));
                 // Проверяем, существует ли файл
-                if (File.Exists(jsonFilePath))
+                if (File.Exists(fullPath))
                 {
                     // Проверяем, существуют ли уже данные в базе данных
                     if (!_context.Stores.Any())
                     {
                         // Считываем данные из JSON-файла
-                        string jsonData = await File.ReadAllTextAsync(jsonFilePath);
+                        string jsonData = await File.ReadAllTextAsync(fullPath);
 
                         // Десериализуем JSON в список объектов Store
                         var stores = JsonSerializer.Deserialize<List<Store>>(jsonData);
