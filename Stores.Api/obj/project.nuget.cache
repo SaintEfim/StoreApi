@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XFPLdQZZ13KhOysy7kSUU8XpsmRd1ECa04ovy/Z0CaoIaL1VL+2NhLHQ4UjI8g4KqpegkdpF0/2gF2Vw9Ttk0w==",
+  "dgSpecHash": "agIGtNNuHtt/QuWHhjC8QKvAZIiQGfvy/PRN23V5/4ehyEfGz0wYqKgFSEJK45pQqhmTA/8naauFKgdTJznsyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Api\\Stores.Api.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.15.1\\microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\moq\\4.20.69\\moq.4.20.69.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
