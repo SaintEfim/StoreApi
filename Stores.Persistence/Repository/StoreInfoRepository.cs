@@ -1,18 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Stores.Persistence;
 using Stores.Domain.Entity;
-using Stores.Domain.Interfaces;
+using Stores.Aplication.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Stores.Persistence.Repository
 {
-    public class StoreService : IStoreService
+    public class StoreInfoRepository : IStoreInfoRepository
     {
         private readonly ApplicationDbContext _context;
 
-        public StoreService(ApplicationDbContext contex)
+        public StoreInfoRepository(ApplicationDbContext contex)
         {
             _context = contex;
         }
