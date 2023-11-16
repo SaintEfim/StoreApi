@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Stores.Domain.Interfaces;
+using Stores.Aplication.Interfaces;
 using Stores.Domain.Entity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -23,7 +23,7 @@ namespace Stores.Api.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
         public async Task<ActionResult<List<CreateStoreDto>>> GetStores()
         {
@@ -34,7 +34,7 @@ namespace Stores.Api.Controllers
 
 
         [HttpGet("{id}")]
-        [Authorize]
+        //[Authorize]
         [ProducesResponseType(typeof(StoreDto), 200)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<StoreDto>> GetStore(int id)
@@ -50,7 +50,7 @@ namespace Stores.Api.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [ProducesResponseType(typeof(CreateResultStoreDto), 201)]
         public async Task<ActionResult> CreateStore(CreateStoreDto storeDto)
         {
@@ -61,7 +61,7 @@ namespace Stores.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         public async Task<ActionResult> UpdateStore(int id, StoreDto storeDto)
@@ -76,7 +76,7 @@ namespace Stores.Api.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [ProducesResponseType(204)]
         public async Task<ActionResult> DeleteStore(int id)
         {

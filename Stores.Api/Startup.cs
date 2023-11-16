@@ -2,7 +2,7 @@
 using Microsoft.OpenApi.Models;
 using Stores.Persistence;
 using Stores.Persistence.Repository;
-using Stores.Domain.Interfaces;
+using Stores.Aplication.Interfaces;
 using Stores.Seeding;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -46,7 +46,7 @@ namespace Stores.Api
 
             // Добавьте сервисы репозитория
             services.AddScoped<IStoreRepository, StoreRepository>();
-            services.AddScoped<IStoreService, StoreService>();
+            services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
             services.AddScoped<Seeder>();
 
             // Добавьте конфигурацию Swagger

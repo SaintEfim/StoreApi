@@ -849,6 +849,15 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Stores.Aplication/1.0.0": {
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Stores.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Stores.Aplication.dll": {}
+        }
+      },
       "Stores.Domain/1.0.0": {
         "runtime": {
           "Stores.Domain.dll": {}
@@ -860,6 +869,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.13",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Stores.Aplication": "1.0.0",
           "Stores.Domain": "1.0.0"
         },
         "runtime": {
@@ -1531,6 +1541,11 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Stores.Aplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Stores.Domain/1.0.0": {
       "type": "project",

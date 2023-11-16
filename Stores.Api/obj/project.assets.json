@@ -840,6 +840,20 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
+      "Stores.Aplication/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Stores.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stores.Aplication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stores.Aplication.dll": {}
+        }
+      },
       "Stores.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -858,6 +872,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.13",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
+          "Stores.Aplication": "1.0.0",
           "Stores.Domain": "1.0.0"
         },
         "compile": {
@@ -2510,6 +2525,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Stores.Aplication/1.0.0": {
+      "type": "project",
+      "path": "../Stores.Aplication/Stores.Aplication.csproj",
+      "msbuildProject": "../Stores.Aplication/Stores.Aplication.csproj"
     },
     "Stores.Domain/1.0.0": {
       "type": "project",

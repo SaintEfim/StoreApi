@@ -7,7 +7,7 @@ namespace Stores.Persistence
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            Database.Migrate();
+            //Database.Migrate();
         }
 
         public DbSet<Store> Stores { get; set; }
