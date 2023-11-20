@@ -7,7 +7,7 @@ using AutoMapper;
 using Stores.Api.Models.Store;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Stores.Api.Controllers
+namespace Stores.WebApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

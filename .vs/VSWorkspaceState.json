@@ -4,8 +4,9 @@
     "\\Stores.Api",
     "\\Stores.Api\\Models",
     "\\Stores.Api\\Models\\Store",
+    "\\Stores.Persistence",
     "\\Stores.Seeding"
   ],
-  "SelectedNode": "\\StoresApi.sln",
+  "SelectedNode": "\\Stores.Persistence\\ApplicationDbContext.cs",
   "PreviewInSolutionExplorer": false
 }
