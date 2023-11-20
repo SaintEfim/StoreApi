@@ -11,13 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("8004ec1f-13cc-4942-94dc-b8752458dca2")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("Stores.Api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Stores.Aplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("Stores.Api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Stores.Api")]
+[assembly: System.Reflection.AssemblyProductAttribute("Stores.Aplication")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Stores.Aplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
