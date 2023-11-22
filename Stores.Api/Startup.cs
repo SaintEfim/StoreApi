@@ -7,6 +7,10 @@ using Stores.Seeding;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Stores.Application.Queries;
+using MediatR;
+using Stores.Domain.Entity;
+using Stores.Persistence.Queries;
 
 namespace Stores.Api
 {
@@ -40,6 +44,8 @@ namespace Stores.Api
 
             services.AddControllers();
             services.AddAutoMapper(typeof(Startup));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetStoresQuery).Assembly));
+
             // Добавьте строку подключения к вашей базе данных
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(Configuration.GetConnectionString("PSQL")).LogTo(Console.WriteLine));
@@ -48,6 +54,8 @@ namespace Stores.Api
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
             services.AddScoped<Seeder>();
+            services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
+
 
             // Добавьте конфигурацию Swagger
             services.AddSwaggerGen(options =>

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Stores.Api.Models.Store;
 using Microsoft.AspNetCore.Authorization;
+using MediatR;
+using Stores.Application.Queries;
 
 namespace Stores.WebApi.Controllers
 {
@@ -15,21 +17,22 @@ namespace Stores.WebApi.Controllers
     {
         private readonly IStoreRepository _storeRepository;
         private readonly IMapper _mapper;
+        private readonly IMediator _mediator;
 
-        public StoreController(IStoreRepository storeRepository, IMapper mapper)
+        public StoreController(IStoreRepository storeRepository, IMapper mapper, IMediator mediator)
         {
             _storeRepository = storeRepository;
             _mapper = mapper;
+            _mediator = mediator;
         }
 
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
-        public async Task<ActionResult<List<CreateStoreDto>>> GetStores()
+        public async Task<ActionResult<List<StoreDto>>> GetStores()
         {
-            var stores = await _storeRepository.GetStoresAsync();
-            var storesDtos = stores.Select(x => _mapper.Map<StoreDto>(x)).ToList();
-            return Ok(storesDtos);
+            var stores = await _mediator.Send(new GetStoresQuery());
+            return Ok(stores.Select(x => _mapper.Map<StoreDto>(x)).ToList());
         }
 
 

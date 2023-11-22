@@ -64,3 +64,6 @@ C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Moq.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\nunit.framework.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Aplication.dll
 C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Stores.Aplication.pdb
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\MediatR.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\MediatR.Contracts.dll
+C:\Users\user\source\Store_Api\Stores.Api\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
