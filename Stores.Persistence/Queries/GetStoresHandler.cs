@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
-using Stores.Aplication.Interfaces;
+using Stores.Application.Interfaces;
 using Stores.Application.Queries;
 using Stores.Domain.Entity;
 

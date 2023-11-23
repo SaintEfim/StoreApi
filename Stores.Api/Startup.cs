@@ -2,7 +2,6 @@
 using Microsoft.OpenApi.Models;
 using Stores.Persistence;
 using Stores.Persistence.Repository;
-using Stores.Aplication.Interfaces;
 using Stores.Seeding;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -11,6 +10,7 @@ using Stores.Application.Queries;
 using MediatR;
 using Stores.Domain.Entity;
 using Stores.Persistence.Queries;
+using Stores.Application.Interfaces;
 
 namespace Stores.Api
 {
@@ -55,6 +55,7 @@ namespace Stores.Api
             services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
             services.AddScoped<Seeder>();
             services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
+            services.AddScoped<IRequestHandler<GetStoreByIdQuery, Store>, GetStoreByIdHandler>();
 
 
             // Добавьте конфигурацию Swagger

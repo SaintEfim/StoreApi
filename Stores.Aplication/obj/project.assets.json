@@ -757,9 +757,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Aplication.csproj",
-      "projectName": "Stores.Aplication",
-      "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Aplication.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Application.csproj",
+      "projectName": "Stores.Application",
+      "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Application.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\obj\\",
       "projectStyle": "PackageReference",

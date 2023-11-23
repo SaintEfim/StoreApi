@@ -464,14 +464,14 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "Stores.Aplication/1.0.0": {
+      "Stores.Application/1.0.0": {
         "dependencies": {
           "MediatR": "12.2.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Stores.Domain": "1.0.0"
         },
         "runtime": {
-          "Stores.Aplication.dll": {}
+          "Stores.Application.dll": {}
         }
       },
       "Stores.Domain/1.0.0": {
@@ -487,7 +487,7 @@
           "Microsoft.EntityFrameworkCore": "7.0.13",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Npgsql.EntityFrameworkCore.PostgreSQL.Design": "1.1.0",
-          "Stores.Aplication": "1.0.0",
+          "Stores.Application": "1.0.0",
           "Stores.Domain": "1.0.0"
         },
         "runtime": {
@@ -884,7 +884,7 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "Stores.Aplication/1.0.0": {
+    "Stores.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

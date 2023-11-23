@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stores.Api", "Stores.Api\St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stores.Seeding", "Stores.Seeding\Stores.Seeding.csproj", "{66C9D9FE-14E7-4049-B452-5E3B37B40C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stores.Aplication", "Stores.Aplication\Stores.Aplication.csproj", "{BCEB7C09-4441-4DB7-99E0-DDD362349D7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stores.Application", "Stores.Aplication\Stores.Application.csproj", "{BCEB7C09-4441-4DB7-99E0-DDD362349D7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Stores.Aplication.Interfaces;
+using Stores.Application.Interfaces;
 using Stores.Api.Models.Address;
 using Stores.Api.Models.Store;
 using AutoMapper;

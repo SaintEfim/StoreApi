@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Stores.Api",
+    "\\Stores.Api\\Controllers",
     "\\Stores.Api\\Models",
     "\\Stores.Api\\Models\\Store",
     "\\Stores.Persistence",
     "\\Stores.Seeding"
   ],
-  "SelectedNode": "\\Stores.Persistence\\ApplicationDbContext.cs",
+  "SelectedNode": "\\Stores.Api\\Controllers\\StoreController.cs",
   "PreviewInSolutionExplorer": false
 }

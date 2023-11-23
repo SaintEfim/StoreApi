@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Stores.Aplication.Interfaces;
+using Stores.Application.Interfaces;
 using Stores.Domain.Entity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -42,14 +42,13 @@ namespace Stores.WebApi.Controllers
         [ProducesResponseType(404)]
         public async Task<ActionResult<StoreDto>> GetStore(int id)
         {
-            var store = await _storeRepository.GetStoreAsync(id);
+            var store = await _mediator.Send(new GetStoreByIdQuery(id));
             if (store == null)
             {
                 return NotFound();
             }
 
-            var storeDto = _mapper.Map<StoreDto>(store);
-            return Ok(storeDto);
+            return Ok(_mapper.Map<StoreDto>(store));
         }
 
         [HttpPost]

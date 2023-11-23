@@ -1,6 +1,6 @@
 ﻿using Stores.Domain.Entity;
 
-namespace Stores.Aplication.Interfaces
+namespace Stores.Application.Interfaces
 {
     public interface IStoreInfoRepository
     {
