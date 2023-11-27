@@ -1,117 +1,117 @@
 [
   {
-    "storeName": "SuperMart",
-    "addresses": [
+    "StoreName": "SuperMart",
+    "Addresses": [
       {
-        "country": "USA",
-        "city": "New York",
-        "street": "Broadway",
-        "postalCode": "10001"
+        "Country": "USA",
+        "City": "New York",
+        "Street": "Broadway",
+        "PostalCode": "10001"
       }
     ],
-    "administrator": {
-      "lastName": "Smith",
-      "phoneNumber": "123-456-7890"
+    "Administrator": {
+      "LastName": "Smith",
+      "PhoneNumber": "123-456-7890"
     },
-    "storeType": {
-      "name": "Grocery"
+    "StoreType": {
+      "Name": "Grocery"
     },
-    "workingHours": {
-      "dayOfWeek": 1,
-      "openingTime": "2023-11-05T08:00:00.000Z",
-      "closingTime": "2023-11-05T20:00:00.000Z"
+    "WorkingHours": {
+      "DayOfWeek": 1,
+      "OpeningTime": "2023-11-05T08:00:00.000Z",
+      "ClosingTime": "2023-11-05T20:00:00.000Z"
     }
   },
   {
-    "storeName": "Fashion Avenue",
-    "addresses": [
+    "StoreName": "Fashion Avenue",
+    "Addresses": [
       {
-        "country": "UK",
-        "city": "London",
-        "street": "Oxford Street",
-        "postalCode": "W1D 1BS"
+        "Country": "UK",
+        "City": "London",
+        "Street": "Oxford Street",
+        "PostalCode": "W1D 1BS"
       }
     ],
-    "administrator": {
-      "lastName": "Johnson",
-      "phoneNumber": "987-654-3210"
+    "Administrator": {
+      "LastName": "Johnson",
+      "PhoneNumber": "987-654-3210"
     },
-    "storeType": {
-      "name": "Clothing"
+    "StoreType": {
+      "Name": "Clothing"
     },
-    "workingHours": {
-      "dayOfWeek": 2,
-      "openingTime": "2023-11-05T10:00:00.000Z",
-      "closingTime": "2023-11-05T19:30:00.000Z"
+    "WorkingHours": {
+      "DayOfWeek": 2,
+      "OpeningTime": "2023-11-05T10:00:00.000Z",
+      "ClosingTime": "2023-11-05T19:30:00.000Z"
     }
   },
   {
-    "storeName": "TechGadgets",
-    "addresses": [
+    "StoreName": "TechGadgets",
+    "Addresses": [
       {
-        "country": "Germany",
-        "city": "Berlin",
-        "street": "Friedrichstraße",
-        "postalCode": "10117"
+        "Country": "Germany",
+        "City": "Berlin",
+        "Street": "Friedrichstraße",
+        "PostalCode": "10117"
       }
     ],
-    "administrator": {
-      "lastName": "Schmidt",
-      "phoneNumber": "555-123-4567"
+    "Administrator": {
+      "LastName": "Schmidt",
+      "PhoneNumber": "555-123-4567"
     },
-    "storeType": {
-      "name": "Electronics"
+    "StoreType": {
+      "Name": "Electronics"
     },
-    "workingHours": {
-      "dayOfWeek": 3,
-      "openingTime": "2023-11-05T09:30:00.000Z",
-      "closingTime": "2023-11-05T18:00:00.000Z"
+    "WorkingHours": {
+      "DayOfWeek": 3,
+      "OpeningTime": "2023-11-05T09:30:00.000Z",
+      "ClosingTime": "2023-11-05T18:00:00.000Z"
     }
   },
   {
-    "storeName": "Organic Delights",
-    "addresses": [
+    "StoreName": "Organic Delights",
+    "Addresses": [
       {
-        "country": "Canada",
-        "city": "Toronto",
-        "street": "Yonge Street",
-        "postalCode": "M5B 2H1"
+        "Country": "Canada",
+        "City": "Toronto",
+        "Street": "Yonge Street",
+        "PostalCode": "M5B 2H1"
       }
     ],
-    "administrator": {
-      "lastName": "Lee",
-      "phoneNumber": "111-222-3333"
+    "Administrator": {
+      "LastName": "Lee",
+      "PhoneNumber": "111-222-3333"
     },
-    "storeType": {
-      "name": "Health Food"
+    "StoreType": {
+      "Name": "Health Food"
     },
-    "workingHours": {
-      "dayOfWeek": 4,
-      "openingTime": "2023-11-05T07:00:00.000Z",
-      "closingTime": "2023-11-05T21:00:00.000Z"
+    "WorkingHours": {
+      "DayOfWeek": 4,
+      "OpeningTime": "2023-11-05T07:00:00.000Z",
+      "ClosingTime": "2023-11-05T21:00:00.000Z"
     }
   },
   {
-    "storeName": "Books & Beyond",
-    "addresses": [
+    "StoreName": "Books & Beyond",
+    "Addresses": [
       {
-        "country": "USA",
-        "city": "San Francisco",
-        "street": "Market Street",
-        "postalCode": "94103"
+        "Country": "USA",
+        "City": "San Francisco",
+        "Street": "Market Street",
+        "PostalCode": "94103"
       }
     ],
-    "administrator": {
-      "lastName": "Miller",
-      "phoneNumber": "444-555-6666"
+    "Administrator": {
+      "LastName": "Miller",
+      "PhoneNumber": "444-555-6666"
     },
-    "storeType": {
-      "name": "Bookstore"
+    "StoreType": {
+      "Name": "Bookstore"
     },
-    "workingHours": {
-      "dayOfWeek": 5,
-      "openingTime": "2023-11-05T10:00:00.000Z",
-      "closingTime": "2023-11-05T18:30:00.000Z"
+    "WorkingHours": {
+      "DayOfWeek": 5,
+      "OpeningTime": "2023-11-05T10:00:00.000Z",
+      "ClosingTime": "2023-11-05T18:30:00.000Z"
     }
   }
 ]
