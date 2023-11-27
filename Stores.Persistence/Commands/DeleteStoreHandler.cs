@@ -16,8 +16,6 @@ public class DeleteStoreHandler : IRequestHandler<DeleteStoreCommand, Unit>
 
     public async Task<Unit> Handle(DeleteStoreCommand request, CancellationToken cancellationToken)
     {
-        await _storeRepository.DeleteStoreAsync(request.Id, cancellationToken);
-        
         var entity = await _storeRepository.GetStoreAsync(request.Id);
 
         if (entity == null)
@@ -25,6 +23,8 @@ public class DeleteStoreHandler : IRequestHandler<DeleteStoreCommand, Unit>
             throw new NotFoundException(nameof(entity), request.Id);
         }
         
+        await _storeRepository.DeleteStoreAsync(request.Id, cancellationToken);
+
         return Unit.Value;
     }
 }

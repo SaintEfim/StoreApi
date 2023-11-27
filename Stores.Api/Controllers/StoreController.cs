@@ -26,7 +26,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpGet]
-    // [Authorize]
+    [Authorize]
     [ProducesResponseType(typeof(List<StoreDto>), 200)]
     public async Task<ActionResult<List<StoreDto>>> GetStores()
     {
@@ -35,7 +35,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    // [Authorize]
+    [Authorize]
     [ProducesResponseType(typeof(StoreDto), 200)]
     [ProducesResponseType(404)]
     public async Task<ActionResult<StoreDto>> GetStore(int id)
@@ -50,7 +50,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpPost]
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(201)]
     [ProducesResponseType(404)]
     public async Task<ActionResult<int>> CreateStore(CreateStoreDto storeDto)
@@ -61,7 +61,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
     public async Task<ActionResult> UpdateStore(int id, StoreDto storeDto)
@@ -77,7 +77,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    // [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     [ProducesResponseType(204)]
     [ProducesResponseType(400)]
     public async Task<ActionResult> DeleteStore(int id)
