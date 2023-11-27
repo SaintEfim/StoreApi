@@ -18,7 +18,7 @@ public class AddStoreHandler : IRequestHandler<AddStoreCommand, Unit>
     {
         await _storeRepository.InsertStoreAsync(request.Store, cancellationToken);
         
-        var entity = await _storeRepository.GetStoreAsync(request.Store.StoreId);
+        var entity = await _storeRepository.GetStoreAsync(request.Store.StoreId, cancellationToken);
         
         if (entity == null)
         {

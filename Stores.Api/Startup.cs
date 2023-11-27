@@ -22,44 +22,42 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-        var secretKey = Configuration.GetValue<string>("ApiSettings:Secret");
+        var secretKey = Configuration.GetValue<string>("ApiSettings:Secret") ??
+                        throw new InvalidOperationException("Secret key is null or empty.");
 
-        if (secretKey != null)
-        {
-            var key = Encoding.ASCII.GetBytes(secretKey);
+        var key = Encoding.ASCII.GetBytes(secretKey);
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.RequireHttpsMetadata = false;
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters
                 {
-                    options.RequireHttpsMetadata = false;
-                    options.SaveToken = true;
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuerSigningKey = true,
-                        IssuerSigningKey = new SymmetricSecurityKey(key),
-                        ValidateIssuer = false,
-                        ValidateAudience = false
-                    };
-                });
-        }
-        else
-        {
-            throw new InvalidOperationException("Secret key is null.");
-        }
-
-
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+        
         services.AddControllers();
         services.AddAutoMapper(typeof(Startup));
-        
+
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("PSQL")).LogTo(Console.WriteLine));
-        
+        services.AddLogging(builder =>
+        {
+            builder.AddConsole();
+            builder.AddDebug();
+        });
+
         services.AddScoped<IStoreRepository, StoreRepository>();
         services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
         services.AddScoped<Seeder>();
 
         services.AddApplication();
-        
+
         services.AddSwaggerGen(options =>
         {
             options.SwaggerDoc("v1", new OpenApiInfo { Title = "Stores API", Version = "v1" });
@@ -97,11 +95,12 @@ public class Startup
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
-
+            app.UseHttpsRedirection();
+            
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                var seeder = scope.ServiceProvider.GetRequiredService<Seeder>();
-                seeder.SeedData().Wait();
+                var seeder = app.ApplicationServices.GetRequiredService<Seeder>();
+                seeder.SeedData().GetAwaiter().GetResult();
             }
         }
 

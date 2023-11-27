@@ -16,7 +16,7 @@ public class DeleteStoreHandler : IRequestHandler<DeleteStoreCommand, Unit>
 
     public async Task<Unit> Handle(DeleteStoreCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _storeRepository.GetStoreAsync(request.Id);
+        var entity = await _storeRepository.GetStoreAsync(request.Id, cancellationToken);
 
         if (entity == null)
         {

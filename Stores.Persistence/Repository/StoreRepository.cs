@@ -23,13 +23,16 @@ public class StoreRepository : IStoreRepository
             .ToListAsync();
     }
 
-    public async Task<Store> GetStoreAsync(int storeId)
-        => (await _context.Stores
+    public async Task<Store> GetStoreAsync(int storeId, CancellationToken cancellationToken)
+    {
+        return (await _context.Stores
             .Include(s => s.Addresses)
             .Include(s => s.Administrator)
             .Include(s => s.StoreType)
             .Include(s => s.WorkingHours)
-            .FirstOrDefaultAsync(s => s.StoreId == storeId))!;
+            .FirstOrDefaultAsync(s => s.StoreId == storeId, cancellationToken))!;
+    }
+
 
 
     public async Task InsertStoreAsync(Store store, CancellationToken cancellationToken)
