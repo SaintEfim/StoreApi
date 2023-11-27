@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Stores.Application.Queries;
 using MediatR;
+using Stores.Application.Commands;
 using Stores.Domain.Entity;
 using Stores.Persistence.Queries;
 using Stores.Application.Interfaces;
+using Stores.Persistence.Commands;
 
 namespace Stores.Api
 {
@@ -56,6 +58,7 @@ namespace Stores.Api
             services.AddScoped<Seeder>();
             services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
             services.AddScoped<IRequestHandler<GetStoreByIdQuery, Store>, GetStoreByIdHandler>();
+            services.AddScoped<IRequestHandler<AddStoreCommand, Unit>, AddStoreHandler>();
 
 
             // Добавьте конфигурацию Swagger

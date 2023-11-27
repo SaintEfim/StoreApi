@@ -31,9 +31,6 @@ namespace Stores.Api
             CreateMap<Store, CreateStoreDto>();
             CreateMap<CreateStoreDto, Store>();
 
-            CreateMap<Store, CreateResultStoreDto>();
-            CreateMap<CreateResultStoreDto, Store>();
-
             CreateMap<StoreType, StoreTypeDto>();
             CreateMap<StoreTypeDto, StoreType>();
 

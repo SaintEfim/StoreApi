@@ -9,7 +9,6 @@ namespace Stores.Domain.Entity
         public string LastName { get; set; }
         [JsonPropertyName("phoneNumber")]
         public string PhoneNumber { get; set; }
-        // Связь с магазином (один администратор может управлять многими магазинами)
         public ICollection<Store> Stores { get; set; }
     }
 }

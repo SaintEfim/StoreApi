@@ -5,6 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using MediatR;
 using Stores.Api.Models.Store;
+using Stores.Application.Commands;
 using Stores.Application.Queries;
 
 namespace Stores.Api.Controllers
@@ -51,13 +52,12 @@ namespace Stores.Api.Controllers
 
         [HttpPost]
         //[Authorize(Roles = "Admin")]
-        [ProducesResponseType(typeof(CreateResultStoreDto), 201)]
+        [ProducesResponseType(typeof(int), 201)]
         public async Task<ActionResult> CreateStore(CreateStoreDto storeDto)
         {
             var store = _mapper.Map<Store>(storeDto);
-            await _storeRepository.InsertStoreAsync(store);
-            var result = _mapper.Map<CreateResultStoreDto>(store);
-            return CreatedAtAction(nameof(GetStore), new { id = store.StoreId }, result);
+            await _mediator.Send(new AddStoreCommand(store));
+            return Ok(new { Id = store.StoreId });
         }
 
         [HttpPut("{id}")]
