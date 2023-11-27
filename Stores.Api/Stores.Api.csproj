@@ -35,8 +35,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Stores.Domain\Stores.Domain.csproj" />
+    <ProjectReference Include="..\Stores.Application\Stores.Application.csproj" />
     <ProjectReference Include="..\Stores.Persistence\Stores.Persistence.csproj" />
-	  <ProjectReference Include="..\Stores.Seeding\Stores.Seeding.csproj" />
+    <ProjectReference Include="..\Stores.Seeding\Stores.Seeding.csproj" />
   </ItemGroup>
 
 </Project>

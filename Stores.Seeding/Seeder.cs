@@ -24,7 +24,7 @@ namespace Stores.Seeding
         {
             try
             {
-                var appDir = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"..\..\..\..\"));
+                var appDir = Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)!, @"..\..\..\..\"));
                 var fullPath = Path.Combine(Path.Combine(appDir, @"Stores.Seeding\Data\Stores.json"));
                 // Проверяем, существует ли файл
                 if (File.Exists(fullPath))

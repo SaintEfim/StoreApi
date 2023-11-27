@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fHjvWjPU6cs08rOuHwo4uoAuJpSzvxgvgB2EqVRBDsh6oTc3MmBIIzNVlI3X4nV0ldX9fmD+EVFYHsGaQ8w6jA==",
+  "dgSpecHash": "pjpeeH8sz1dtZQuqGGGV8qXyMNXFKYEdfraARU73qQBsMOTlZP8h7VHJHTX2RU1tHCHYlAHzcLis07FgmeykvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Api\\Stores.Api.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Api\\Stores.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -56,14 +56,18 @@
     "C:\\Users\\user\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.15.1\\system.identitymodel.tokens.jwt.6.15.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Вы выполняете операцию ''restore'' с источником ''HTTP'', ''http://nexus.mes.local:8081/repository/nuget-group/index.json''. Доступ без HTTPS будет удален в будущей версии. Рассмотрите возможность перехода на источник ''HTTPS''."
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.mes.local:8081/repository/nuget-group/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

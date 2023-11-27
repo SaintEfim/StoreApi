@@ -1,8 +1,8 @@
 ﻿using Stores.Api.Models.Address;
 using Stores.Api.Models.Administrator;
-using Stores.Api.Models.Storetype;
 using Stores.Api.Models.StoreType;
 using Stores.Api.Models.WorkingHours;
+using Stores.Api.Models.Storetype;
 
 namespace Stores.Api.Models.Store
 {

@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "t5wQqxouQPAsHWmeUSkxljiwN8LbYjTwTTHnyGNX7ePpL5ZlTXWKBHLrbQtfcR9uC5C6/6qqLoGjErNEYGhKOQ==",
+  "dgSpecHash": "lqP0F3V6WV+7hxGZhHiitwY1xNseOH/jtunev7UM3B27wJY2MczKH3fk0bhWmklApkZ7jtjCDCwUonK2pgFCFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Вы выполняете операцию ''restore'' с источником ''HTTP'', ''http://nexus.mes.local:8081/repository/nuget-group/index.json''. Доступ без HTTPS будет удален в будущей версии. Рассмотрите возможность перехода на источник ''HTTPS''."
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.mes.local:8081/repository/nuget-group/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

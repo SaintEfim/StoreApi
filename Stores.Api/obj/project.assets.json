@@ -875,7 +875,6 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "MediatR": "12.2.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Stores.Domain": "1.0.0"
         },
         "compile": {
@@ -2594,8 +2593,8 @@
     },
     "Stores.Application/1.0.0": {
       "type": "project",
-      "path": "../Stores.Aplication/Stores.Application.csproj",
-      "msbuildProject": "../Stores.Aplication/Stores.Application.csproj"
+      "path": "../Stores.Application/Stores.Application.csproj",
+      "msbuildProject": "../Stores.Application/Stores.Application.csproj"
     },
     "Stores.Domain/1.0.0": {
       "type": "project",
@@ -2626,6 +2625,7 @@
       "Moq >= 4.20.69",
       "NUnit >= 3.14.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
+      "Stores.Application >= 1.0.0",
       "Stores.Domain >= 1.0.0",
       "Stores.Persistence >= 1.0.0",
       "Stores.Seeding >= 1.0.0",
@@ -2638,11 +2638,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Api\\Stores.Api.csproj",
+      "projectUniqueName": "C:\\projects\\StoreApi\\Stores.Api\\Stores.Api.csproj",
       "projectName": "Stores.Api",
-      "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Api\\Stores.Api.csproj",
+      "projectPath": "C:\\projects\\StoreApi\\Stores.Api\\Stores.Api.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Api\\obj\\",
+      "outputPath": "C:\\projects\\StoreApi\\Stores.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2653,7 +2653,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "http://nexus.mes.local:8081/repository/nuget-group/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -2661,14 +2660,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj"
+            "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj": {
+              "projectPath": "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj"
             },
-            "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj"
+            "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj": {
+              "projectPath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj"
             },
-            "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj"
+            "C:\\projects\\StoreApi\\Stores.Persistence\\Stores.Persistence.csproj": {
+              "projectPath": "C:\\projects\\StoreApi\\Stores.Persistence\\Stores.Persistence.csproj"
+            },
+            "C:\\projects\\StoreApi\\Stores.Seeding\\Stores.Seeding.csproj": {
+              "projectPath": "C:\\projects\\StoreApi\\Stores.Seeding\\Stores.Seeding.csproj"
             }
           }
         }
@@ -2747,6 +2749,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.14, 7.0.14]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2755,7 +2775,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -2764,7 +2784,7 @@
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Вы выполняете операцию ''restore'' с источником ''HTTP'', ''http://nexus.mes.local:8081/repository/nuget-group/index.json''. Доступ без HTTPS будет удален в будущей версии. Рассмотрите возможность перехода на источник ''HTTPS''."
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.mes.local:8081/repository/nuget-group/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

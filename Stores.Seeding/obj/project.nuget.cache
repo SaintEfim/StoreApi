@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eNWvycIFDEa9HthqtUoVTA5VlzlkI/ddZkOOAqrsOGGFSdrtkOl5wV8t/irBIb+iKlN1VUmRCPS4jeQk+PqSZQ==",
+  "dgSpecHash": "Ti0u9rvXTC0K/dXnHS745CEEue8mSMJLyVcSOfCLHZl3jCHVUe5EBZ8XnDYBHmstjKxCZRy9fxnSZyB1+R13gg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Seeding\\Stores.Seeding.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -99,14 +99,17 @@
     "C:\\Users\\user\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\user\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1803",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Вы выполняете операцию ''restore'' с источником ''HTTP'', ''http://nexus.mes.local:8081/repository/nuget-group/index.json''. Доступ без HTTPS будет удален в будущей версии. Рассмотрите возможность перехода на источник ''HTTPS''."
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus.mes.local:8081/repository/nuget-group/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
     }
   ]
 }

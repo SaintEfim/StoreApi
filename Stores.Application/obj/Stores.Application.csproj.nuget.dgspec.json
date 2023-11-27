@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Application.csproj": {}
+    "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Application.csproj": {
+    "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Application.csproj",
+        "projectUniqueName": "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj",
         "projectName": "Stores.Application",
-        "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Application.csproj",
+        "projectPath": "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\obj\\",
+        "outputPath": "C:\\projects\\StoreApi\\Stores.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {
-                "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj"
+              "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj": {
+                "projectPath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj"
               }
             }
           }
@@ -48,10 +48,6 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[7.0.11, )"
             }
           },
           "imports": [
@@ -65,23 +61,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {
+    "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj",
+        "projectUniqueName": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj",
         "projectName": "Stores.Domain",
-        "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj",
+        "projectPath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\obj\\",
+        "outputPath": "C:\\projects\\StoreApi\\Stores.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -121,12 +131,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

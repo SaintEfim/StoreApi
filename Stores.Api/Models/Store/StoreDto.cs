@@ -1,10 +1,10 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 using AutoMapper;
-using Stores.Domain.Entity;
 using Stores.Api.Models.Address;
 using Stores.Api.Models.Administrator;
 using Stores.Api.Models.Storetype;
 using Stores.Api.Models.WorkingHours;
+using Stores.Domain.Entity;
 
 namespace Stores.Api.Models.Store
 {

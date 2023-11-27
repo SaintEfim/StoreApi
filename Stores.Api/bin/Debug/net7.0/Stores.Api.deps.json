@@ -19,6 +19,7 @@
           "Moq": "4.20.69",
           "NUnit": "3.14.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
+          "Stores.Application": "1.0.0",
           "Stores.Domain": "1.0.0",
           "Stores.Persistence": "1.0.0",
           "Stores.Seeding": "1.0.0",
@@ -467,7 +468,6 @@
       "Stores.Application/1.0.0": {
         "dependencies": {
           "MediatR": "12.2.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Stores.Domain": "1.0.0"
         },
         "runtime": {

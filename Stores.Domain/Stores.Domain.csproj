@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="obj\Debug\net7.0\Stores.Domain.csproj.AssemblyReference.cache" />
+  </ItemGroup>
+
 </Project>

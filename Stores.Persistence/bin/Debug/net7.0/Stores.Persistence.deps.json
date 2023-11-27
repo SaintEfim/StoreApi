@@ -937,7 +937,6 @@
       "Stores.Application/1.0.0": {
         "dependencies": {
           "MediatR": "12.2.0",
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "Stores.Domain": "1.0.0"
         },
         "runtime": {

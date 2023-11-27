@@ -1,15 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Stores.Application.Interfaces;
 using Stores.Domain.Entity;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using AutoMapper;
-using Stores.Api.Models.Store;
 using Microsoft.AspNetCore.Authorization;
 using MediatR;
+using Stores.Api.Models.Store;
 using Stores.Application.Queries;
 
-namespace Stores.WebApi.Controllers
+namespace Stores.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -27,7 +25,7 @@ namespace Stores.WebApi.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
         public async Task<ActionResult<List<StoreDto>>> GetStores()
         {
