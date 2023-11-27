@@ -1825,6 +1825,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "FluentValidation.DependencyInjectionExtensions": "11.8.1",
           "MediatR": "12.2.0",
           "Stores.Domain": "1.0.0"
         },

@@ -26,7 +26,7 @@ namespace Stores.Persistence.Repository
                 .ToListAsync();
         }
 
-        public async Task<Store> GetStoreAsync(int storeId)
+        public async Task<Store> GetStoreAsync(int storeId, CancellationToken cancellationToken)
             => await _context.Stores
              .Include(s => s.Addresses)
              .Include(s => s.Administrator)
@@ -35,31 +35,31 @@ namespace Stores.Persistence.Repository
              .FirstOrDefaultAsync(s => s.StoreId == storeId);
 
 
-        public async Task InsertStoreAsync(Store store)
+        public async Task InsertStoreAsync(Store store, CancellationToken cancellationToken)
         {
             _context.Stores.Add(store);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task UpdateStoreAsync(Store store)
+        public async Task UpdateStoreAsync(Store store, CancellationToken cancellationToken)
         {
             _context.Stores.Update(store);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task DeleteStoreAsync(int storeId)
+        public async Task DeleteStoreAsync(int storeId, CancellationToken cancellationToken)
         {
             var store = await _context.Stores.FindAsync(storeId);
             if (store != null)
             {
                 _context.Stores.Remove(store);
-                await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync(cancellationToken);
             }
         }
 
-        public async Task SaveAsync()
+        public async Task SaveAsync(CancellationToken cancellationToken)
         {
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
         }
     }
 }

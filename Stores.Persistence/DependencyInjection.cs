@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
+using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using FluentValidation;
 using Stores.Application.Common.Behaviors;
 
-namespace Stores.Application
+namespace Stores.Persistence
 {
     public static class DependencyInjection
     {

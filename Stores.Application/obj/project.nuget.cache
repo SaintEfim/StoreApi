@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "x/RBLvJ8XLNmUfIzDoafdLfiL4aNOrilu6vYM+aBn6Zfl1uSGsFX2GRF7VGxKTjfw/K7Sn6WamCjL3YeBr01Jw==",
+  "dgSpecHash": "oSc69YM3R4Ijx3FBAA2hfKFop+Iyyor284HDpfspoCnk36DhWgRyYI8gAuShXIvu9UyQo1yTL8iu5QukBpvcqw==",
   "success": true,
   "projectFilePath": "C:\\projects\\StoreApi\\Stores.Application\\Stores.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.1\\fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",

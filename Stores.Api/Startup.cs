@@ -14,6 +14,7 @@ using Stores.Domain.Entity;
 using Stores.Persistence.Queries;
 using Stores.Application.Interfaces;
 using Stores.Persistence.Commands;
+using Stores.WebApi.Middleware;
 
 namespace Stores.Api
 {
@@ -58,14 +59,7 @@ namespace Stores.Api
             services.AddScoped<Seeder>();
 
             services.AddApplication();
-
-            // services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
-            // services.AddScoped<IRequestHandler<GetStoreByIdQuery, Store>, GetStoreByIdHandler>();
-            // services.AddScoped<IRequestHandler<AddStoreCommand, Unit>, AddStoreHandler>();
-            // services.AddScoped<IRequestHandler<UpdateStoreCommand, Unit>, UpdateStoreHandler>();
-            // services.AddScoped<IRequestHandler<DeleteStoreCommand, Unit>, DeleteStoreHandler>();
-
-
+            
             // Добавьте конфигурацию Swagger
             services.AddSwaggerGen(options =>
             {
@@ -112,19 +106,15 @@ namespace Stores.Api
                 }
             }
 
+            app.UseCustomExceptionHandler();
             app.UseRouting();
-
-            // Подключите Swagger
             app.UseSwagger();
-
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Store V1");
             });
-
             app.UseAuthentication();
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
