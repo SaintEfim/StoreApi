@@ -1,7 +1,6 @@
-﻿namespace Stores.Api.Models.StoreType
+﻿namespace Stores.Api.Models.StoreType;
+
+public class CreateStoreTypeDto
 {
-    public class CreateStoreTypeDto
-    {
-        public string Name { get; set; }
-    }
+    public string Name { get; set; }
 }
