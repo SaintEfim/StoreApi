@@ -7,41 +7,40 @@ using Stores.Api.Models.StoreType;
 using Stores.Api.Models.WorkingHours;
 using Stores.Domain.Entity;
 
-namespace Stores.Api
+namespace Stores.Api;
+
+public class MappingProfile : Profile
 {
-    public class MappingProfile : Profile
+    public MappingProfile()
     {
-        public MappingProfile()
-        {
-            CreateMap<Address, AddressDto>();
-            CreateMap<AddressDto, Address>();
+        CreateMap<Address, AddressDto>();
+        CreateMap<AddressDto, Address>();
 
-            CreateMap<Address, CreateAddressDto>();
-            CreateMap<CreateAddressDto, Address>();
+        CreateMap<Address, CreateAddressDto>();
+        CreateMap<CreateAddressDto, Address>();
 
-            CreateMap<Administrator, AdministratorDto>();
-            CreateMap<AdministratorDto, Administrator>();
+        CreateMap<Administrator, AdministratorDto>();
+        CreateMap<AdministratorDto, Administrator>();
 
-            CreateMap<Administrator, CreateAdministratorDto>();
-            CreateMap<CreateAdministratorDto, Administrator>();
+        CreateMap<Administrator, CreateAdministratorDto>();
+        CreateMap<CreateAdministratorDto, Administrator>();
 
-            CreateMap<Store, StoreDto>();
-            CreateMap<StoreDto, Store>();
+        CreateMap<Store, StoreDto>();
+        CreateMap<StoreDto, Store>();
 
-            CreateMap<Store, CreateStoreDto>();
-            CreateMap<CreateStoreDto, Store>();
+        CreateMap<Store, CreateStoreDto>();
+        CreateMap<CreateStoreDto, Store>();
 
-            CreateMap<StoreType, StoreTypeDto>();
-            CreateMap<StoreTypeDto, StoreType>();
+        CreateMap<StoreType, StoreTypeDto>();
+        CreateMap<StoreTypeDto, StoreType>();
 
-            CreateMap<StoreType, CreateStoreTypeDto>();
-            CreateMap<CreateStoreTypeDto, StoreType>();
+        CreateMap<StoreType, CreateStoreTypeDto>();
+        CreateMap<CreateStoreTypeDto, StoreType>();
 
-            CreateMap<WorkingHours, WorkingHoursDto>();
-            CreateMap<WorkingHoursDto, WorkingHours>();
+        CreateMap<WorkingHours, WorkingHoursDto>();
+        CreateMap<WorkingHoursDto, WorkingHours>();
 
-            CreateMap<WorkingHours, CreateWorkingHoursDto>();
-            CreateMap<CreateWorkingHoursDto, WorkingHours>();
-        }
+        CreateMap<WorkingHours, CreateWorkingHoursDto>();
+        CreateMap<CreateWorkingHoursDto, WorkingHours>();
     }
 }

@@ -1,13 +1,12 @@
 ﻿using Microsoft.AspNetCore.Builder;
 
-namespace Stores.WebApi.Middleware
+namespace Stores.Api.Middleware;
+
+public static class CustomExceptionHandlerMiddlewareExtensions
 {
-    public static class CustomExceptionHandlerMiddlewareExtensions
+    public static IApplicationBuilder UseCustomExceptionHandler(this
+        IApplicationBuilder builder)
     {
-        public static IApplicationBuilder UseCustomExceptionHandler(this
-            IApplicationBuilder builder)
-        {
-            return builder.UseMiddleware<CustomExceptionHandlerMiddleware>();
-        }
+        return builder.UseMiddleware<CustomExceptionHandlerMiddleware>();
     }
 }
