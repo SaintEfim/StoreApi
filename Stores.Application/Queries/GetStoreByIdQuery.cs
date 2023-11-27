@@ -10,5 +10,5 @@ public class GetStoreByIdQuery : IRequest<Store>
         Id = id;
     }
 
-    public int Id { get; set; }
+    public int Id { get; }
 }

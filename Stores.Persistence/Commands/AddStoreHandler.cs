@@ -16,14 +16,15 @@ public class AddStoreHandler : IRequestHandler<AddStoreCommand, Unit>
 
     public async Task<Unit> Handle(AddStoreCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _storeRepository.GetStoreAsync(request.Store.StoreId, cancellationToken);
-
+        await _storeRepository.InsertStoreAsync(request.Store, cancellationToken);
+        
+        var entity = await _storeRepository.GetStoreAsync(request.Store.StoreId);
+        
         if (entity == null)
         {
             throw new NotFoundException(nameof(entity), request.Store.StoreId);
         }
-
-        await _storeRepository.InsertStoreAsync(request.Store, cancellationToken);
+        
         return Unit.Value;
     }
 }

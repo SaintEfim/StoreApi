@@ -23,37 +23,43 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         var secretKey = Configuration.GetValue<string>("ApiSettings:Secret");
-        var key = Encoding.ASCII.GetBytes(secretKey);
 
-        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(options =>
-            {
-                options.RequireHttpsMetadata = false;
-                options.SaveToken = true;
-                options.TokenValidationParameters = new TokenValidationParameters
+        if (secretKey != null)
+        {
+            var key = Encoding.ASCII.GetBytes(secretKey);
+
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
                 {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = false,
-                    ValidateAudience = false
-                };
-            });
+                    options.RequireHttpsMetadata = false;
+                    options.SaveToken = true;
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(key),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
+        }
+        else
+        {
+            throw new InvalidOperationException("Secret key is null.");
+        }
+
 
         services.AddControllers();
         services.AddAutoMapper(typeof(Startup));
-
-        // Добавьте строку подключения к вашей базе данных
+        
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("PSQL")).LogTo(Console.WriteLine));
-
-        // Добавьте сервисы репозитория
+        
         services.AddScoped<IStoreRepository, StoreRepository>();
         services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
         services.AddScoped<Seeder>();
 
         services.AddApplication();
-
-        // Добавьте конфигурацию Swagger
+        
         services.AddSwaggerGen(options =>
         {
             options.SwaggerDoc("v1", new OpenApiInfo { Title = "Stores API", Version = "v1" });

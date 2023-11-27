@@ -10,11 +10,11 @@ public sealed class ApplicationDbContext : DbContext
         Database.Migrate();
     }
 
-    public DbSet<Store> Stores { get; set; }
-    public DbSet<Address> Addresses { get; set; }
-    public DbSet<WorkingHours> WorkingHours { get; set; }
-    public DbSet<Administrator> Administrators { get; set; }
-    public DbSet<StoreType> StoreTypes { get; set; }
+    public DbSet<Store> Stores { get; set; } = null!;
+    public DbSet<Address> Addresses { get; set; } = null!;
+    public DbSet<WorkingHours> WorkingHours { get; set; } = null!;
+    public DbSet<Administrator> Administrators { get; set; } = null!;
+    public DbSet<StoreType> StoreTypes { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

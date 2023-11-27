@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Stores.Application.Common.Exceptions;
 using Stores.Domain.Entity;
 using Stores.Application.Interfaces;
 
@@ -46,8 +47,18 @@ public class StoreInfoRepository : IStoreInfoRepository
             .Include(s => s.Administrator)
             .FirstOrDefault(s => s.Administrator.PhoneNumber == phoneNumber);
 
-        return store.Addresses.FirstOrDefault();
+        if (store != null)
+        {
+            var addresses = store.Addresses;
+            if (addresses.Any())
+            {
+                return addresses.First();
+            }
+        }
+
+        throw new NotFoundException(nameof(Address), phoneNumber);
     }
+
 
     public Store GetStoreByWorkingHours(int storeTypeId, DayOfWeek day, TimeSpan time)
     {
@@ -58,7 +69,12 @@ public class StoreInfoRepository : IStoreInfoRepository
                                  s.WorkingHours.OpeningTime.TimeOfDay <= time &&
                                  s.WorkingHours.ClosingTime.TimeOfDay >= time);
 
-        return store;
+        if (store != null)
+        {
+            return store;
+        }
+        
+        throw new NotFoundException(nameof(Store), storeTypeId);
     }
 
     public List<string> GetAdministratorsLastNameByStoreType(string storeType)

@@ -1,6 +1,8 @@
-﻿namespace Stores.Api.Models.StoreType;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Stores.Api.Models.StoreType;
 
 public class CreateStoreTypeDto
 {
-    public string Name { get; set; }
+    [Required] public string Name { get; set; } = default!;
 }

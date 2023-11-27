@@ -1,9 +1,11 @@
-﻿namespace Stores.Api.Models.Address;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Stores.Api.Models.Address;
 
 public class CreateAddressDto
 {
-    public string Country { get; set; }
-    public string City { get; set; }
-    public string Street { get; set; }
-    public string PostalCode { get; set; }
+    [Required] public string Country { get; set; } = default!;
+    [Required] public string City { get; set; } = default!;
+    [Required] public string Street { get; set; } = default!;
+    [Required] public string PostalCode { get; set; } = default!;
 }
