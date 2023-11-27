@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {}
+    "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {
+    "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj",
+        "projectUniqueName": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj",
         "projectName": "Stores.Domain",
-        "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj",
+        "projectPath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\obj\\",
+        "outputPath": "C:\\projects\\StoreApi\\Stores.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

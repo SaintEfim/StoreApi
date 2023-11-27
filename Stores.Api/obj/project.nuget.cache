@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5kJg+q+FxXKSR8jUwJZrFCgk9nvBFGSfocpJLYa+yTj1id44HiZ3dyTU6nPTXo6qJti2qCZ+ACkfNLTIeXssiA==",
+  "dgSpecHash": "ULpNvi097bdc5CZvaaapDz74T8m81+9G5Ynz5eJ7ALfKSHvFXzNiRQVFLMdWe7//TTuiT4dyNyjcQAgOQ17JqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Api\\Stores.Api.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Api\\Stores.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t5wQqxouQPAsHWmeUSkxljiwN8LbYjTwTTHnyGNX7ePpL5ZlTXWKBHLrbQtfcR9uC5C6/6qqLoGjErNEYGhKOQ==",
+  "dgSpecHash": "wv83+rwMQQR0wbkmp9GN8Wr4I8I3P8SieCFGUsm4dIyYX99pguMSZ1pGETrk/vMQu6YZGHWxRtMLEbrXFIvw7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {

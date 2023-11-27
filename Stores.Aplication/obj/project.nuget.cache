@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SHYWuENSW3S4BLq27EqO467RLam/pofZJLkx4YaH1mROAI+Ik+l938MiI89zXTbKgLc20HNcscTt9NIogzqPmQ==",
+  "dgSpecHash": "T2d8KeZDa6LCDv9PwVrA5+WypOhsdabWZIegAJCYOMB6hNqPg//RAe3ekcU4BBF5+zn2H2H1YcE9k2MU+6xU5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Aplication.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Aplication\\Stores.Aplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",

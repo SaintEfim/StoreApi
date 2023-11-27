@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E1P6ut8Y8BIZ+ikbPjtLGrbkk1UasWqlefleZfKfnxSC9gLF5wx68Et9qCtbwzIrHGUdmNo/tDlcF80/Umde7g==",
+  "dgSpecHash": "tTqugK1+7zd0ukz15gykEm1gC47stUhrPRbJhzl9K0/XUb8MaQIo8T86RUwoMmWCk3LPj3y29aFd9ROwLVIo1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Seeding\\Stores.Seeding.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Seeding\\Stores.Seeding.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

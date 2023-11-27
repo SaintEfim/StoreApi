@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Aplication.csproj",
+      "projectUniqueName": "C:\\projects\\StoreApi\\Stores.Aplication\\Stores.Aplication.csproj",
       "projectName": "Stores.Aplication",
-      "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\Stores.Aplication.csproj",
+      "projectPath": "C:\\projects\\StoreApi\\Stores.Aplication\\Stores.Aplication.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Aplication\\obj\\",
+      "outputPath": "C:\\projects\\StoreApi\\Stores.Aplication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -715,8 +715,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj": {
-              "projectPath": "C:\\Users\\user\\source\\Store_Api\\Stores.Domain\\Stores.Domain.csproj"
+            "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj": {
+              "projectPath": "C:\\projects\\StoreApi\\Stores.Domain\\Stores.Domain.csproj"
             }
           }
         }

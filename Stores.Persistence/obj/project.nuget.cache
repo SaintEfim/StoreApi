@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ii23xz7ogH4Z2sCHN2cz5Xvm5wQbYTIL41JVcQZNnlOiSeLGpuPb+nz4+nLI6Iz73qb6+BS2mRwCCBS4hsiqgw==",
+  "dgSpecHash": "oXnrSL5rR+nUoUQkDCXrDgG+JrAVuo9ZK4yuJ/dE0nbXt/EGaw/DzmWkpy+qwM9sQ8XZYhivO3yyTAei7McyRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\source\\Store_Api\\Stores.Persistence\\Stores.Persistence.csproj",
+  "projectFilePath": "C:\\projects\\StoreApi\\Stores.Persistence\\Stores.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.13\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.13.nupkg.sha512",
