@@ -1,25 +1,23 @@
-﻿using AutoMapper;
-using MediatR;
+﻿using MediatR;
 using Stores.Application.Interfaces;
 using Stores.Application.Queries;
 using Stores.Domain.Entity;
 
-namespace Stores.Persistence.Queries
+namespace Stores.Persistence.Queries;
+
+public class GetStoreByIdHandler : IRequestHandler<GetStoreByIdQuery, Store>
 {
-    public class GetStoreByIdHandler : IRequestHandler<GetStoreByIdQuery, Store>
+    private readonly IStoreRepository _storeRepository;
+
+    public GetStoreByIdHandler(IStoreRepository storeRepository)
     {
-        private readonly IStoreRepository _storeRepository;
+        _storeRepository = storeRepository;
+    }
 
-        public GetStoreByIdHandler(IStoreRepository storeRepository)
-        {
-            _storeRepository = storeRepository;
-        }
+    public async Task<Store> Handle(GetStoreByIdQuery query, CancellationToken cancellationToken)
+    {
+        var stores = await _storeRepository.GetStoreAsync(query.Id, cancellationToken);
 
-        public async Task<Store> Handle(GetStoreByIdQuery query, CancellationToken cancellationToken)
-        {
-            var stores = await _storeRepository.GetStoreAsync(query.Id, cancellationToken);
-
-            return stores;
-        }
+        return stores;
     }
 }

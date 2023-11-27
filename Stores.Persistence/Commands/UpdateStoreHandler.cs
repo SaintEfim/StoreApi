@@ -17,12 +17,12 @@ public class UpdateStoreHandler : IRequestHandler<UpdateStoreCommand, Unit>
     public async Task<Unit> Handle(UpdateStoreCommand request, CancellationToken cancellationToken)
     {
         var entity = await _storeRepository.GetStoreAsync(request.Store.StoreId, cancellationToken);
-        
+
         if (entity == null)
         {
             throw new NotFoundException(nameof(entity), request.Store.StoreId);
         }
-        
+
         await _storeRepository.UpdateStoreAsync(request.Store, cancellationToken);
         return Unit.Value;
     }

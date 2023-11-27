@@ -1,13 +1,12 @@
 ﻿using Stores.Domain.Entity;
 
-namespace Stores.Application.Interfaces
+namespace Stores.Application.Interfaces;
+
+public interface IStoreRepository
 {
-    public interface IStoreRepository
-    {
-        Task<ICollection<Store>> GetStoresAsync();
-        Task<Store> GetStoreAsync(int id, CancellationToken cancellationToken);
-        Task InsertStoreAsync(Store store, CancellationToken cancellationToken);
-        Task UpdateStoreAsync(Store store, CancellationToken cancellationToken);
-        Task DeleteStoreAsync(int id, CancellationToken cancellationToken);
-    }
+    Task<ICollection<Store>> GetStoresAsync();
+    Task<Store> GetStoreAsync(int id, CancellationToken cancellationToken);
+    Task InsertStoreAsync(Store store, CancellationToken cancellationToken);
+    Task UpdateStoreAsync(Store store, CancellationToken cancellationToken);
+    Task DeleteStoreAsync(int id, CancellationToken cancellationToken);
 }

@@ -1,15 +1,14 @@
 ﻿using MediatR;
 using Stores.Domain.Entity;
 
-namespace Stores.Application.Queries
-{
-    public class GetStoreByIdQuery : IRequest<Store>
-    {
-        public GetStoreByIdQuery(int id)
-        {
-            Id = id;
-        }
+namespace Stores.Application.Queries;
 
-        public int Id { get; set; }
+public class GetStoreByIdQuery : IRequest<Store>
+{
+    public GetStoreByIdQuery(int id)
+    {
+        Id = id;
     }
+
+    public int Id { get; set; }
 }

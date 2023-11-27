@@ -3,22 +3,21 @@ using Stores.Application.Interfaces;
 using Stores.Application.Queries;
 using Stores.Domain.Entity;
 
-namespace Stores.Persistence.Queries
+namespace Stores.Persistence.Queries;
+
+public class GetStoresHandler : IRequestHandler<GetStoresQuery, ICollection<Store>>
 {
-    public class GetStoresHandler : IRequestHandler<GetStoresQuery, ICollection<Store>>
+    private readonly IStoreRepository _storeRepository;
+
+    public GetStoresHandler(IStoreRepository storeRepository)
     {
-        private readonly IStoreRepository _storeRepository;
+        _storeRepository = storeRepository;
+    }
 
-        public GetStoresHandler(IStoreRepository storeRepository)
-        {
-            _storeRepository = storeRepository;
-        }
+    public async Task<ICollection<Store>> Handle(GetStoresQuery query, CancellationToken cancellationToken)
+    {
+        var stores = await _storeRepository.GetStoresAsync();
 
-        public async Task<ICollection<Store>> Handle(GetStoresQuery query, CancellationToken cancellationToken)
-        {
-            var stores = await _storeRepository.GetStoresAsync();
-
-            return stores;
-        }
+        return stores;
     }
 }
