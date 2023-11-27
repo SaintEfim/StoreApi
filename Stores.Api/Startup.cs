@@ -59,6 +59,8 @@ namespace Stores.Api
             services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
             services.AddScoped<IRequestHandler<GetStoreByIdQuery, Store>, GetStoreByIdHandler>();
             services.AddScoped<IRequestHandler<AddStoreCommand, Unit>, AddStoreHandler>();
+            services.AddScoped<IRequestHandler<UpdateStoreCommand, Unit>, UpdateStoreHandler>();
+            services.AddScoped<IRequestHandler<DeleteStoreCommand, Unit>, DeleteStoreHandler>();
 
 
             // Добавьте конфигурацию Swagger

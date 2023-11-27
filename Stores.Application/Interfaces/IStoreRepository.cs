@@ -9,6 +9,5 @@ namespace Stores.Application.Interfaces
         Task InsertStoreAsync(Store store);
         Task UpdateStoreAsync(Store store);
         Task DeleteStoreAsync(int id);
-        Task SaveAsync();
     }
 }

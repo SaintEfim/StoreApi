@@ -1,8 +1,6 @@
-﻿using AutoMapper;
-using MediatR;
+﻿using MediatR;
 using Stores.Application.Commands;
 using Stores.Application.Interfaces;
-using Stores.Domain.Entity;
 
 namespace Stores.Persistence.Commands;
 
@@ -10,7 +8,7 @@ public class AddStoreHandler : IRequestHandler<AddStoreCommand, Unit>
 {
     private readonly IStoreRepository _storeRepository;
 
-    public AddStoreHandler(IStoreRepository storeRepository)
+    public AddStoreHandler(IStoreRepository storeRepository) 
     {
         _storeRepository = storeRepository;
     }

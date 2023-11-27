@@ -26,7 +26,6 @@ namespace Stores.Api.Controllers
         }
 
         [HttpGet]
-        //[Authorize]
         [ProducesResponseType(typeof(List<StoreDto>), 200)]
         public async Task<ActionResult<List<StoreDto>>> GetStores()
         {
@@ -34,9 +33,7 @@ namespace Stores.Api.Controllers
             return Ok(stores.Select(x => _mapper.Map<StoreDto>(x)).ToList());
         }
 
-
         [HttpGet("{id}")]
-        //[Authorize]
         [ProducesResponseType(typeof(StoreDto), 200)]
         [ProducesResponseType(404)]
         public async Task<ActionResult<StoreDto>> GetStore(int id)
@@ -51,9 +48,9 @@ namespace Stores.Api.Controllers
         }
 
         [HttpPost]
-        //[Authorize(Roles = "Admin")]
-        [ProducesResponseType(typeof(int), 201)]
-        public async Task<ActionResult> CreateStore(CreateStoreDto storeDto)
+        [ProducesResponseType(201)]
+        [ProducesResponseType(404)]
+        public async Task<ActionResult<int>> CreateStore(CreateStoreDto storeDto)
         {
             var store = _mapper.Map<Store>(storeDto);
             await _mediator.Send(new AddStoreCommand(store));
@@ -61,7 +58,6 @@ namespace Stores.Api.Controllers
         }
 
         [HttpPut("{id}")]
-        //[Authorize(Roles = "Admin")]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         public async Task<ActionResult> UpdateStore(int id, StoreDto storeDto)
@@ -71,16 +67,17 @@ namespace Stores.Api.Controllers
             {
                 return BadRequest();
             }
-            await _storeRepository.UpdateStoreAsync(store);
+
+            await _mediator.Send(new UpdateStoreCommand(store));
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        //[Authorize(Roles = "Admin")]
         [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
         public async Task<ActionResult> DeleteStore(int id)
         {
-            await _storeRepository.DeleteStoreAsync(id);
+            await _mediator.Send(new DeleteStoreCommand(id));
             return NoContent();
         }
     }

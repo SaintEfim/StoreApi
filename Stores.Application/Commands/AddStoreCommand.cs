@@ -1,14 +1,10 @@
-﻿using MediatR;
-using Stores.Domain.Entity;
+﻿using Stores.Domain.Entity;
 
 namespace Stores.Application.Commands;
 
-public class AddStoreCommand : IRequest<Unit>
+public class AddStoreCommand : BaseStoreCommand
 {
-    public AddStoreCommand(Store store)
+    public AddStoreCommand(Store store) : base(store)
     {
-        Store = store;
     }
-
-    public Store Store { get; set; }
 }
