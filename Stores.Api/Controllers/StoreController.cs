@@ -26,7 +26,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpGet]
-    [Authorize]
+    // [Authorize]
     [ProducesResponseType(typeof(List<StoreDto>), 200)]
     public async Task<ActionResult<List<StoreDto>>> GetStores()
     {

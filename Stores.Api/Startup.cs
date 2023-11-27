@@ -40,8 +40,9 @@ public class Startup
                     ValidateAudience = false
                 };
             });
-        
+            
         services.AddControllers();
+        services.AddResponseCompression();
         services.AddAutoMapper(typeof(Startup));
 
         services.AddDbContext<ApplicationDbContext>(options =>
@@ -99,12 +100,13 @@ public class Startup
             
             using (var scope = app.ApplicationServices.CreateScope())
             {
-                var seeder = app.ApplicationServices.GetRequiredService<Seeder>();
-                seeder.SeedData().GetAwaiter().GetResult();
+                var seeder = scope.ServiceProvider.GetRequiredService<Seeder>();
+                seeder.SeedData().Wait();
             }
         }
 
         app.UseCustomExceptionHandler();
+        app.UseResponseCompression();
         app.UseRouting();
         app.UseSwagger();
         app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Store V1"); });
