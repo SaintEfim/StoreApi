@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Stores.Domain.Entity;
 
-namespace Stores.Application.Commands;
+namespace Stores.Application.BaseCommands;
 
 public abstract class BaseStoreCommand : IRequest<Unit>
 {

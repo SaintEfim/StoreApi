@@ -137,3 +137,5 @@ C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\refint\Stores.Api.dll
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.pdb
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.genruntimeconfig.cache
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\ref\Stores.Api.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\FluentValidation.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll

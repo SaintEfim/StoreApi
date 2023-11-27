@@ -1,4 +1,5 @@
-﻿using Stores.Domain.Entity;
+﻿using Stores.Application.BaseCommands;
+using Stores.Domain.Entity;
 
 namespace Stores.Application.Commands;
 

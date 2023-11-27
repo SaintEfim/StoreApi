@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Stores.Application.Queries;
 using MediatR;
+using Stores.Application;
 using Stores.Application.Commands;
 using Stores.Domain.Entity;
 using Stores.Persistence.Queries;
@@ -46,7 +47,6 @@ namespace Stores.Api
 
             services.AddControllers();
             services.AddAutoMapper(typeof(Startup));
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(GetStoresQuery).Assembly));
 
             // Добавьте строку подключения к вашей базе данных
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -56,11 +56,14 @@ namespace Stores.Api
             services.AddScoped<IStoreRepository, StoreRepository>();
             services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
             services.AddScoped<Seeder>();
-            services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
-            services.AddScoped<IRequestHandler<GetStoreByIdQuery, Store>, GetStoreByIdHandler>();
-            services.AddScoped<IRequestHandler<AddStoreCommand, Unit>, AddStoreHandler>();
-            services.AddScoped<IRequestHandler<UpdateStoreCommand, Unit>, UpdateStoreHandler>();
-            services.AddScoped<IRequestHandler<DeleteStoreCommand, Unit>, DeleteStoreHandler>();
+
+            services.AddApplication();
+
+            // services.AddScoped<IRequestHandler<GetStoresQuery, ICollection<Store>>, GetStoresHandler>();
+            // services.AddScoped<IRequestHandler<GetStoreByIdQuery, Store>, GetStoreByIdHandler>();
+            // services.AddScoped<IRequestHandler<AddStoreCommand, Unit>, AddStoreHandler>();
+            // services.AddScoped<IRequestHandler<UpdateStoreCommand, Unit>, UpdateStoreHandler>();
+            // services.AddScoped<IRequestHandler<DeleteStoreCommand, Unit>, DeleteStoreHandler>();
 
 
             // Добавьте конфигурацию Swagger
