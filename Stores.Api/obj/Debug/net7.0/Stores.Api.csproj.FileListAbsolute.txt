@@ -139,3 +139,10 @@ C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.genruntimeconfig.cac
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\ref\Stores.Api.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\FluentValidation.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\StackExchange.Redis.dll

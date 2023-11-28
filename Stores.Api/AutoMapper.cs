@@ -2,7 +2,6 @@
 using Stores.Api.Models.Address;
 using Stores.Api.Models.Administrator;
 using Stores.Api.Models.Store;
-using Stores.Api.Models.Storetype;
 using Stores.Api.Models.StoreType;
 using Stores.Api.Models.WorkingHours;
 using Stores.Domain.Entity;
@@ -16,14 +15,8 @@ public class MappingProfile : Profile
         CreateMap<Address, AddressDto>();
         CreateMap<AddressDto, Address>();
 
-        CreateMap<Address, CreateAddressDto>();
-        CreateMap<CreateAddressDto, Address>();
-
         CreateMap<Administrator, AdministratorDto>();
         CreateMap<AdministratorDto, Administrator>();
-
-        CreateMap<Administrator, CreateAdministratorDto>();
-        CreateMap<CreateAdministratorDto, Administrator>();
 
         CreateMap<Store, StoreDto>();
         CreateMap<StoreDto, Store>();
@@ -34,13 +27,7 @@ public class MappingProfile : Profile
         CreateMap<StoreType, StoreTypeDto>();
         CreateMap<StoreTypeDto, StoreType>();
 
-        CreateMap<StoreType, CreateStoreTypeDto>();
-        CreateMap<CreateStoreTypeDto, StoreType>();
-
         CreateMap<WorkingHours, WorkingHoursDto>();
         CreateMap<WorkingHoursDto, WorkingHours>();
-
-        CreateMap<WorkingHours, CreateWorkingHoursDto>();
-        CreateMap<CreateWorkingHoursDto, WorkingHours>();
     }
 }

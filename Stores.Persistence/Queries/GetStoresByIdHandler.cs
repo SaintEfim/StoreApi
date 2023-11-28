@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Stores.Application.Interfaces;
+using Stores.Application.Interfaces.Repository;
 using Stores.Application.Queries;
 using Stores.Domain.Entity;
 

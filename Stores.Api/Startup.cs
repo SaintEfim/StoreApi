@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Stores.Application.Interfaces;
 using Stores.Api.Middleware;
+using Stores.Application.Interfaces.Repository;
+using Stores.Application.Interfaces.Service;
+using Stores.Persistence.Service;
 
 namespace Stores.Api;
 
@@ -47,6 +50,8 @@ public class Startup
 
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(Configuration.GetConnectionString("PSQL")).LogTo(Console.WriteLine));
+        services.AddScoped<ICacheSerivce, CacheService>();
+        
         services.AddLogging(builder =>
         {
             builder.AddConsole();

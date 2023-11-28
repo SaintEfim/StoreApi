@@ -32,7 +32,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [Authorize]
+    // [Authorize]
     [ProducesResponseType(typeof(StoreDto), 200)]
     [ProducesResponseType(404)]
     public async Task<ActionResult<StoreDto>> GetStore(int id)

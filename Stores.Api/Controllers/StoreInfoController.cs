@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Stores.Application.Interfaces;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Stores.Api.Models.Address;
 using Stores.Api.Models.Store;
+using Stores.Application.Interfaces.Repository;
 
 namespace Stores.Api.Controllers;
 

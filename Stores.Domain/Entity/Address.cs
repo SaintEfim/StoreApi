@@ -1,4 +1,6 @@
-﻿namespace Stores.Domain.Entity;
+﻿using System.Text.Json.Serialization;
+
+namespace Stores.Domain.Entity;
 
 public class Address
 {
@@ -8,5 +10,5 @@ public class Address
     public string Street { get; set; } = null!;
     public string PostalCode { get; set; } = null!;
     public int StoreId { get; set; }
-    public Store Store { get; set; } = null!;
+    [JsonIgnore] public Store Store { get; set; } = null!;
 }
