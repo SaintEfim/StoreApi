@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Stores.Seeding")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+643bfe033531ebcfd897d500fd5dc49db39b6f97")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a36b09de00b6f6bb49d9c943f958afd95d60dc0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stores.Seeding")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stores.Seeding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

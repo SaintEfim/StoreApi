@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Stores.Application.Interfaces;
 using Stores.Domain.Entity;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
@@ -14,13 +13,11 @@ namespace Stores.Api.Controllers;
 [Route("api/[controller]")]
 public class StoreController : ControllerBase
 {
-    private readonly IStoreRepository _storeRepository;
     private readonly IMapper _mapper;
     private readonly IMediator _mediator;
 
-    public StoreController(IStoreRepository storeRepository, IMapper mapper, IMediator mediator)
+    public StoreController(IMapper mapper, IMediator mediator)
     {
-        _storeRepository = storeRepository;
         _mapper = mapper;
         _mediator = mediator;
     }
