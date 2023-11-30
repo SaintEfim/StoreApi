@@ -34,6 +34,21 @@ public sealed class ApplicationDbContext : DbContext
         modelBuilder.Entity<Store>()
             .HasOne(s => s.WorkingHours)
             .WithMany(wh => wh.Stores);
+        
+        modelBuilder.Entity<WorkingHours>()
+            .HasMany(s => s.Stores)
+            .WithOne(a => a.WorkingHours)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        modelBuilder.Entity<Administrator>()
+            .HasMany(s => s.Stores)
+            .WithOne(a => a.Administrator)
+            .OnDelete(DeleteBehavior.Cascade);
+        
+        modelBuilder.Entity<StoreType>()
+            .HasMany(s => s.Stores)
+            .WithOne(a => a.StoreType)
+            .OnDelete(DeleteBehavior.Cascade);
 
         base.OnModelCreating(modelBuilder);
     }

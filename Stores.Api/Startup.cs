@@ -49,7 +49,14 @@ public class Startup
         services.AddAutoMapper(typeof(Startup));
 
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseNpgsql(Configuration.GetConnectionString("PSQL")).LogTo(Console.WriteLine));
+        {
+            options.UseNpgsql(Configuration.GetConnectionString("PSQL"), action =>
+            {
+                action.CommandTimeout(30);
+            });
+            options.EnableDetailedErrors(true);
+            options.EnableSensitiveDataLogging(true);
+        });
         services.AddScoped<ICacheSerivce, CacheService>();
         
         services.AddLogging(builder =>
