@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Stores.Application.Interfaces;
 using Stores.Application.Interfaces.Repository;
 using Stores.Application.Queries;
 using Stores.Domain.Entity;
@@ -18,7 +17,7 @@ public class GetStoresHandler : IRequestHandler<GetStoresQuery, ICollection<Stor
     public async Task<ICollection<Store>> Handle(GetStoresQuery query, CancellationToken cancellationToken)
     {
         var stores = await _storeRepository.GetStoresAsync();
-
+        
         return stores;
     }
 }

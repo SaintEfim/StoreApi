@@ -10,6 +10,7 @@ public class StoreRepository : IStoreRepository
 {
     private readonly ApplicationDbContext _context;
     private readonly ICacheSerivce _cacheSerivce;
+
     public StoreRepository(ApplicationDbContext context, ICacheSerivce cacheSerivce)
     {
         _context = context;
@@ -18,22 +19,12 @@ public class StoreRepository : IStoreRepository
 
     public async Task<ICollection<Store>> GetStoresAsync()
     {
-        var cacheData = _cacheSerivce.GetData<ICollection<Store>>("stores");
-
-        if (cacheData != null && cacheData.Count() > 0)
-            return cacheData;
-
-        cacheData = await _context.Stores
+        return await _context.Stores
             .Include(s => s.Addresses)
             .Include(s => s.Administrator)
             .Include(s => s.StoreType)
             .Include(s => s.WorkingHours)
             .ToListAsync();
-
-        var expiryTime = DateTimeOffset.Now.AddSeconds(5);
-        _cacheSerivce.SetData<ICollection<Store>>("stores", cacheData, expiryTime);
-
-        return cacheData;
     }
 
     public async Task<Store> GetStoreAsync(int storeId, CancellationToken cancellationToken)
@@ -45,7 +36,6 @@ public class StoreRepository : IStoreRepository
             .Include(s => s.WorkingHours)
             .FirstOrDefaultAsync(s => s.StoreId == storeId, cancellationToken))!;
     }
-
 
 
     public async Task InsertStoreAsync(Store store, CancellationToken cancellationToken)
