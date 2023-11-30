@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Stores.Application.Interfaces;
 using Stores.Application.Interfaces.Repository;
-using Stores.Application.Interfaces.Service;
 using Stores.Domain.Entity;
 
 namespace Stores.Persistence.Repository;
@@ -9,12 +7,10 @@ namespace Stores.Persistence.Repository;
 public class StoreRepository : IStoreRepository
 {
     private readonly ApplicationDbContext _context;
-    private readonly ICacheSerivce _cacheSerivce;
 
-    public StoreRepository(ApplicationDbContext context, ICacheSerivce cacheSerivce)
+    public StoreRepository(ApplicationDbContext context)
     {
         _context = context;
-        _cacheSerivce = cacheSerivce;
     }
 
     public async Task<ICollection<Store>> GetStoresAsync()
