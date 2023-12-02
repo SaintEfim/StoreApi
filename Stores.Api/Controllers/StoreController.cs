@@ -16,9 +16,9 @@ public class StoreController : ControllerBase
 {
     private readonly IMapper _mapper;
     private readonly IMediator _mediator;
-    private readonly ICacheSerivce _cacheSerivce;
+    private readonly ICacheService _cacheSerivce;
 
-    public StoreController(IMapper mapper, IMediator mediator, ICacheSerivce cacheSerivce)
+    public StoreController(IMapper mapper, IMediator mediator, ICacheService cacheSerivce)
     {
         _mapper = mapper;
         _mediator = mediator;

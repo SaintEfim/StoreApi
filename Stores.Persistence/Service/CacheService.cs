@@ -1,11 +1,10 @@
 ﻿using System.Text.Json;
-using System.Text.Json.Serialization;
 using StackExchange.Redis;
 using Stores.Application.Interfaces.Service;
 
 namespace Stores.Persistence.Service;
 
-public class CacheService : ICacheSerivce
+public class CacheService : ICacheService
 {
     private readonly IDatabase _cacheDb;
 
