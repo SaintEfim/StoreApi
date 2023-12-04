@@ -148,7 +148,3 @@ C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Pipelines.Sockets.Unofficial.dl
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\StackExchange.Redis.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Autofac.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Autofac.Extensions.DependencyInjection.dll
-C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Autofac.Integration.WebApi.dll
-C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\System.Net.Http.Formatting.dll
-C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\System.Web.Http.dll
-C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Newtonsoft.Json.dll

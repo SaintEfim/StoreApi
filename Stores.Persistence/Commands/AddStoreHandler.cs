@@ -1,7 +1,5 @@
 ﻿using MediatR;
 using Stores.Application.Commands;
-using Stores.Application.Common.Exceptions;
-using Stores.Application.Interfaces;
 using Stores.Application.Interfaces.Repository;
 
 namespace Stores.Persistence.Commands;
