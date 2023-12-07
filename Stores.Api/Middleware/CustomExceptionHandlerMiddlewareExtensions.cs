@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-
-namespace Stores.Api.Middleware;
+﻿namespace Stores.Api.Middleware;
 
 public static class CustomExceptionHandlerMiddlewareExtensions
 {

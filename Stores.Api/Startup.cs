@@ -1,15 +1,11 @@
 ﻿using Microsoft.OpenApi.Models;
-using Stores.Application.Interfaces.Repository;
 using Stores.Persistence;
-using Stores.Persistence.Repository;
 using Stores.Seeding;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Stores.Api.Middleware;
-using Stores.Application.Interfaces.Service;
-using Stores.Persistence.Service;
 
 namespace Stores.Api
 {
@@ -53,13 +49,9 @@ namespace Stores.Api
                 options.EnableDetailedErrors(true);
                 options.EnableSensitiveDataLogging(true);
             });
-
-            services.AddScoped<ICacheService, CacheService>();
-            services.AddScoped<IStoreRepository, StoreRepository>();
-            services.AddScoped<IStoreInfoRepository, StoreInfoRepository>();
-            services.AddScoped<Seeder>();
-
+            
             services.AddApplication();
+            services.AddSeeder();
 
             services.AddSwaggerGen(options =>
             {

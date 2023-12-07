@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Stores.Application.Common.Exceptions;
 using Stores.Domain.Entity;
-using Stores.Application.Interfaces;
 using Stores.Application.Interfaces.Repository;
 
 namespace Stores.Persistence.Repository;

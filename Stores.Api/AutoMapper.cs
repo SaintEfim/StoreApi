@@ -12,22 +12,16 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<Address, AddressDto>();
-        CreateMap<AddressDto, Address>();
+        CreateMap<AddressDto, Address>().ReverseMap();
 
-        CreateMap<Administrator, AdministratorDto>();
-        CreateMap<AdministratorDto, Administrator>();
+        CreateMap<AdministratorDto, Administrator>().ReverseMap();
 
         CreateMap<Store, StoreDto>();
-        CreateMap<StoreDto, Store>();
 
-        CreateMap<Store, CreateStoreDto>();
-        CreateMap<CreateStoreDto, Store>();
+        CreateMap<CreateStoreDto, Store>().ReverseMap();
 
-        CreateMap<StoreType, StoreTypeDto>();
-        CreateMap<StoreTypeDto, StoreType>();
+        CreateMap<StoreTypeDto, StoreType>().ReverseMap();
 
-        CreateMap<WorkingHours, WorkingHoursDto>();
-        CreateMap<WorkingHoursDto, WorkingHours>();
+        CreateMap<WorkingHoursDto, WorkingHours>().ReverseMap();
     }
 }

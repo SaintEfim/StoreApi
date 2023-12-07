@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 using Stores.Api.Models.Address;
 using Stores.Api.Models.Store;
 using Stores.Application.Interfaces.Repository;
@@ -21,7 +20,7 @@ public class StoreInfoController : ControllerBase
     }
 
     [HttpGet("ByType/{storeType}")]
-    [Authorize]
+    // [Authorize]
     public ActionResult<List<StoreDto>> GetStoresByType(string storeType)
     {
         var stores = _storeService.GetStoresByType(storeType);
@@ -29,7 +28,7 @@ public class StoreInfoController : ControllerBase
     }
 
     [HttpGet("ByStreet/{street}")]
-    [Authorize]
+    // [Authorize]
     public ActionResult<List<StoreDto>> GetStoresByStreet(string street)
     {
         var stores = _storeService.GetStoresByStreet(street);
@@ -37,7 +36,7 @@ public class StoreInfoController : ControllerBase
     }
 
     [HttpGet("ByPhoneNumber/{phoneNumber}")]
-    [Authorize]
+    // [Authorize]
     public ActionResult<AddressDto> GetStoreAddressByPhoneNumber(string phoneNumber)
     {
         var address = _storeService.GetStoreAddressByPhoneNumber(phoneNumber);
@@ -45,7 +44,7 @@ public class StoreInfoController : ControllerBase
     }
 
     [HttpGet("ByTypeAndHours/{storeTypeId}/{day}/{time}")]
-    [Authorize]
+    // [Authorize]
     public ActionResult<StoreDto> GetStoreByWorkingHours(int storeTypeId, DayOfWeek day, TimeSpan time)
     {
         var store = _storeService.GetStoreByWorkingHours(storeTypeId, day, time);
@@ -53,7 +52,7 @@ public class StoreInfoController : ControllerBase
     }
 
     [HttpGet("AdminsByType/{storeType}")]
-    [Authorize]
+    // [Authorize]
     public ActionResult<List<string>> GetAdministratorsLastNameByStoreType(string storeType)
     {
         var administrators = _storeService.GetAdministratorsLastNameByStoreType(storeType);
@@ -61,7 +60,7 @@ public class StoreInfoController : ControllerBase
     }
 
     [HttpGet("CountByType/{storeType}")]
-    [Authorize]
+    // [Authorize]
     public ActionResult<int> GetStoreTypeCount(string storeType)
     {
         var count = _storeService.GetStoreTypeCount(storeType);

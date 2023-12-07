@@ -33,14 +33,14 @@ public class StoreController : ControllerBase
         var cacheData = _cacheSerivce.GetData<ICollection<Store>>(nameof(Store));
 
         if (cacheData != null && cacheData.Any())
-            return Ok(cacheData.Select(x => _mapper.Map<StoreDto>(x)).ToList());
+            return Ok(_mapper.Map<List<StoreDto>>(cacheData));
 
         cacheData = await _mediator.Send(new GetStoresQuery());
 
         var expiryTime = DateTimeOffset.Now.AddSeconds(30);
         _cacheSerivce.SetData(nameof(Store), cacheData, expiryTime);
 
-        return Ok(cacheData.Select(x => _mapper.Map<StoreDto>(x)).ToList());
+        return Ok(_mapper.Map<List<StoreDto>>(cacheData));
     }
 
     [HttpGet("{id}")]
