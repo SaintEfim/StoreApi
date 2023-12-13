@@ -21,7 +21,8 @@
           "Stores.Domain": "1.0.0",
           "Stores.Persistence": "1.0.0",
           "Stores.Seeding": "1.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0"
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Stores.Application": "1.0.0.0"
         },
         "runtime": {
           "Stores.Api.dll": {}
@@ -436,15 +437,6 @@
           "System.Text.Encodings.Web": "7.0.0"
         }
       },
-      "Stores.Aplication/1.0.0": {
-        "dependencies": {
-          "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
-          "Stores.Domain": "1.0.0"
-        },
-        "runtime": {
-          "Stores.Aplication.dll": {}
-        }
-      },
       "Stores.Domain/1.0.0": {
         "runtime": {
           "Stores.Domain.dll": {}
@@ -472,6 +464,14 @@
         },
         "runtime": {
           "Stores.Seeding.dll": {}
+        }
+      },
+      "Stores.Application/1.0.0.0": {
+        "runtime": {
+          "Stores.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -839,11 +839,6 @@
       "path": "system.text.json/7.0.0",
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
-    "Stores.Aplication/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Stores.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -856,6 +851,11 @@
     },
     "Stores.Seeding/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stores.Application/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

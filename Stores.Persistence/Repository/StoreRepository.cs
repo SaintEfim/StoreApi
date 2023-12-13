@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Stores.Aplication.Interfaces;
+using Stores.Application.Interfaces;
 using Stores.Domain.Entity;
 using Stores.Persistence;
 

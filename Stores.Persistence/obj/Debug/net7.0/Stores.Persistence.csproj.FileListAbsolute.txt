@@ -21,9 +21,7 @@ C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Persistence.deps
 C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Persistence.runtimeconfig.json
 C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Persistence.dll
 C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Persistence.pdb
-C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Aplication.dll
 C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Domain.dll
-C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Aplication.pdb
 C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Domain.pdb
 C:\projects\StoreApi\Stores.Persistence\obj\Debug\net7.0\Stores.Persistence.csproj.AssemblyReference.cache
 C:\projects\StoreApi\Stores.Persistence\obj\Debug\net7.0\Stores.Persistence.GeneratedMSBuildEditorConfig.editorconfig
@@ -37,3 +35,5 @@ C:\projects\StoreApi\Stores.Persistence\obj\Debug\net7.0\refint\Stores.Persisten
 C:\projects\StoreApi\Stores.Persistence\obj\Debug\net7.0\Stores.Persistence.pdb
 C:\projects\StoreApi\Stores.Persistence\obj\Debug\net7.0\Stores.Persistence.genruntimeconfig.cache
 C:\projects\StoreApi\Stores.Persistence\obj\Debug\net7.0\ref\Stores.Persistence.dll
+C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Application.dll
+C:\projects\StoreApi\Stores.Persistence\bin\Debug\net7.0\Stores.Application.pdb

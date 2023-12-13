@@ -1,0 +1,16 @@
+C:\projects\StoreApi\Stores.Application\bin\Debug\net7.0\Stores.Application.deps.json
+C:\projects\StoreApi\Stores.Application\bin\Debug\net7.0\Stores.Application.dll
+C:\projects\StoreApi\Stores.Application\bin\Debug\net7.0\Stores.Application.pdb
+C:\projects\StoreApi\Stores.Application\bin\Debug\net7.0\Stores.Domain.dll
+C:\projects\StoreApi\Stores.Application\bin\Debug\net7.0\Stores.Domain.pdb
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.csproj.AssemblyReference.cache
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.AssemblyInfoInputs.cache
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.AssemblyInfo.cs
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.csproj.CoreCompileInputs.cache
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.sourcelink.json
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.csproj.CopyComplete
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.dll
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\refint\Stores.Application.dll
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\Stores.Application.pdb
+C:\projects\StoreApi\Stores.Application\obj\Debug\net7.0\ref\Stores.Application.dll

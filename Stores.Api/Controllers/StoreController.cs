@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Stores.Aplication.Interfaces;
+using Stores.Application.Interfaces;
 using Stores.Domain.Entity;
 using System.Collections.Generic;
 using System.Threading.Tasks;

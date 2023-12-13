@@ -2,7 +2,7 @@
 using Microsoft.OpenApi.Models;
 using Stores.Persistence;
 using Stores.Persistence.Repository;
-using Stores.Aplication.Interfaces;
+using Stores.Application.Interfaces;
 using Stores.Seeding;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;

@@ -101,14 +101,12 @@ C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerG
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\System.CodeDom.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
-C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Aplication.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Domain.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Persistence.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Seeding.dll
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Domain.pdb
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Persistence.pdb
 C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Seeding.pdb
-C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Aplication.pdb
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.csproj.AssemblyReference.cache
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.AssemblyInfoInputs.cache
@@ -131,3 +129,5 @@ C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\refint\Stores.Api.dll
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.pdb
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\Stores.Api.genruntimeconfig.cache
 C:\projects\StoreApi\Stores.Api\obj\Debug\net7.0\ref\Stores.Api.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Application.dll
+C:\projects\StoreApi\Stores.Api\bin\Debug\net7.0\Stores.Application.pdb

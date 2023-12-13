@@ -20,12 +20,10 @@ C:\Users\user\source\Store_Api\Stores.Seeding\bin\Debug\net7.0\Stores.Aplication
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Seeding.deps.json
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Seeding.dll
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Seeding.pdb
-C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Aplication.dll
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Domain.dll
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Persistence.dll
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Domain.pdb
 C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Persistence.pdb
-C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Aplication.pdb
 C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\Stores.Seeding.csproj.AssemblyReference.cache
 C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\Stores.Seeding.GeneratedMSBuildEditorConfig.editorconfig
 C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\Stores.Seeding.AssemblyInfoInputs.cache
@@ -37,3 +35,5 @@ C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\Stores.Seeding.dll
 C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\refint\Stores.Seeding.dll
 C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\Stores.Seeding.pdb
 C:\projects\StoreApi\Stores.Seeding\obj\Debug\net7.0\ref\Stores.Seeding.dll
+C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Application.dll
+C:\projects\StoreApi\Stores.Seeding\bin\Debug\net7.0\Stores.Application.pdb
