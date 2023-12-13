@@ -16,14 +16,14 @@ public class DeleteStoreHandler : IRequestHandler<DeleteStoreCommand, Unit>
 
     public async Task<Unit> Handle(DeleteStoreCommand request, CancellationToken cancellationToken)
     {
-        var entity = await _storeRepository.GetStoreAsync(request.Id, cancellationToken);
+        var entity = await _storeRepository.GetStore(request.Id, cancellationToken);
 
         if (entity == null)
         {
             throw new NotFoundException(nameof(entity), request.Id);
         }
         
-        await _storeRepository.DeleteStoreAsync(request.Id, cancellationToken);
+        await _storeRepository.DeleteStore(request.Id, cancellationToken);
 
         return Unit.Value;
     }

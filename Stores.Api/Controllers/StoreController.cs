@@ -16,13 +16,13 @@ public class StoreController : ControllerBase
 {
     private readonly IMapper _mapper;
     private readonly IMediator _mediator;
-    private readonly ICacheService _cacheSerivce;
+    private readonly ICacheService _cacheService;
 
-    public StoreController(IMapper mapper, IMediator mediator, ICacheService cacheSerivce)
+    public StoreController(IMapper mapper, IMediator mediator, ICacheService cacheService)
     {
         _mapper = mapper;
         _mediator = mediator;
-        _cacheSerivce = cacheSerivce;
+        _cacheService = cacheService;
     }
 
     [HttpGet]
@@ -30,15 +30,15 @@ public class StoreController : ControllerBase
     [ProducesResponseType(typeof(List<StoreDto>), 200)]
     public async Task<ActionResult<List<StoreDto>>> GetStores()
     {
-        var cacheData = _cacheSerivce.GetData<ICollection<Store>>(nameof(Store));
+        var cacheData = _cacheService.GetData<ICollection<Store>>(nameof(Store));
 
-        if (cacheData != null && cacheData.Any())
+        if (cacheData.Any())
             return Ok(_mapper.Map<List<StoreDto>>(cacheData));
 
         cacheData = await _mediator.Send(new GetStoresQuery());
 
         var expiryTime = DateTimeOffset.Now.AddSeconds(30);
-        _cacheSerivce.SetData(nameof(Store), cacheData, expiryTime);
+        _cacheService.SetData(nameof(Store), cacheData, expiryTime);
 
         return Ok(_mapper.Map<List<StoreDto>>(cacheData));
     }
@@ -49,7 +49,7 @@ public class StoreController : ControllerBase
     [ProducesResponseType(404)]
     public async Task<ActionResult<StoreDto>> GetStore(int id)
     {
-        var cachedStore = _cacheSerivce.GetData<Store>($"store{id}");
+        var cachedStore = _cacheService.GetData<Store>($"store{id}");
 
         if (cachedStore != null)
             return Ok(_mapper.Map<StoreDto>(cachedStore));
@@ -57,7 +57,7 @@ public class StoreController : ControllerBase
         var store = await _mediator.Send(new GetStoreByIdQuery(id));
 
         var expiryTime = DateTimeOffset.Now.AddSeconds(30);
-        _cacheSerivce.SetData($"store{id}", store, expiryTime);
+        _cacheService.SetData($"store{id}", store, expiryTime);
         return Ok(_mapper.Map<StoreDto>(store));
     }
 
@@ -72,7 +72,7 @@ public class StoreController : ControllerBase
         await _mediator.Send(new AddStoreCommand(store));
 
         var expiryTime = DateTimeOffset.Now.AddSeconds(30);
-        _cacheSerivce.SetData<Store>($"stores{store.StoreId}", store, expiryTime);
+        _cacheService.SetData<Store>($"stores{store.StoreId}", store, expiryTime);
 
         return Ok(new { Id = store.StoreId });
     }
@@ -90,7 +90,7 @@ public class StoreController : ControllerBase
         }
 
         var expiryTime = DateTimeOffset.Now.AddSeconds(30);
-        _cacheSerivce.SetData<Store>($"stores{store.StoreId}", store, expiryTime);
+        _cacheService.SetData<Store>($"stores{store.StoreId}", store, expiryTime);
 
         await _mediator.Send(new UpdateStoreCommand(store));
         return NoContent();
@@ -103,7 +103,7 @@ public class StoreController : ControllerBase
     public async Task<ActionResult> DeleteStore(int id)
     {
         await _mediator.Send(new DeleteStoreCommand(id));
-        _cacheSerivce.RemoveData($"store{id}");
+        _cacheService.RemoveData($"store{id}");
         return NoContent();
     }
 }

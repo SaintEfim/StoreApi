@@ -15,7 +15,7 @@ public class AddStoreHandler : IRequestHandler<AddStoreCommand, Unit>
 
     public async Task<Unit> Handle(AddStoreCommand request, CancellationToken cancellationToken)
     {
-        await _storeRepository.InsertStoreAsync(request.Store, cancellationToken);
+        await _storeRepository.InsertStore(request.Store, cancellationToken);
         return Unit.Value;
     }
 }

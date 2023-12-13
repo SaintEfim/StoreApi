@@ -16,9 +16,9 @@ public class UpdateStoreHandler : IRequestHandler<UpdateStoreCommand, Unit>
 
     public async Task<Unit> Handle(UpdateStoreCommand request, CancellationToken cancellationToken)
     {
-        await _storeRepository.UpdateStoreAsync(request.Store, cancellationToken);
+        await _storeRepository.UpdateStore(request.Store, cancellationToken);
         
-        var entity = await _storeRepository.GetStoreAsync(request.Store.StoreId, cancellationToken);
+        var entity = await _storeRepository.GetStore(request.Store.StoreId, cancellationToken);
 
         if (entity == null)
         {

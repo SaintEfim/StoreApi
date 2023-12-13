@@ -13,7 +13,7 @@ public class StoreRepository : IStoreRepository
         _context = context;
     }
 
-    public async Task<ICollection<Store>> GetStoresAsync()
+    public async Task<ICollection<Store>> GetStores()
     {
         return await _context.Stores
             .Include(s => s.Addresses)
@@ -23,7 +23,7 @@ public class StoreRepository : IStoreRepository
             .ToListAsync();
     }
 
-    public async Task<Store> GetStoreAsync(int storeId, CancellationToken cancellationToken)
+    public async Task<Store> GetStore(int storeId, CancellationToken cancellationToken)
     {
         return (await _context.Stores
             .Include(s => s.Addresses)
@@ -34,19 +34,19 @@ public class StoreRepository : IStoreRepository
     }
 
 
-    public async Task InsertStoreAsync(Store store, CancellationToken cancellationToken)
+    public async Task InsertStore(Store store, CancellationToken cancellationToken)
     {
         _context.Stores.Add(store);
         await _context.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task UpdateStoreAsync(Store store, CancellationToken cancellationToken)
+    public async Task UpdateStore(Store store, CancellationToken cancellationToken)
     {
         _context.Stores.Update(store);
         await _context.SaveChangesAsync(cancellationToken);
     }
 
-    public async Task DeleteStoreAsync(int storeId, CancellationToken cancellationToken)
+    public async Task DeleteStore(int storeId, CancellationToken cancellationToken)
     {
         var store = await _context.Stores.FindAsync(storeId);
         if (store != null)

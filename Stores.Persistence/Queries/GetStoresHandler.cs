@@ -16,7 +16,7 @@ public class GetStoresHandler : IRequestHandler<GetStoresQuery, ICollection<Stor
 
     public async Task<ICollection<Store>> Handle(GetStoresQuery query, CancellationToken cancellationToken)
     {
-        var stores = await _storeRepository.GetStoresAsync();
+        var stores = await _storeRepository.GetStores();
         
         return stores;
     }

@@ -4,9 +4,9 @@ namespace Stores.Application.Interfaces.Repository;
 
 public interface IStoreRepository
 {
-    Task<ICollection<Store>> GetStoresAsync();
-    Task<Store> GetStoreAsync(int id, CancellationToken cancellationToken);
-    Task InsertStoreAsync(Store store, CancellationToken cancellationToken);
-    Task UpdateStoreAsync(Store store, CancellationToken cancellationToken);
-    Task DeleteStoreAsync(int id, CancellationToken cancellationToken);
+    Task<ICollection<Store>> GetStores();
+    Task<Store> GetStore(int id, CancellationToken cancellationToken);
+    Task InsertStore(Store store, CancellationToken cancellationToken);
+    Task UpdateStore(Store store, CancellationToken cancellationToken);
+    Task DeleteStore(int id, CancellationToken cancellationToken);
 }
