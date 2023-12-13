@@ -32,7 +32,7 @@ public class StoreController : ControllerBase
     {
         var cacheData = _cacheService.GetData<ICollection<Store>>(nameof(Store));
 
-        if (cacheData.Any())
+        if (cacheData != null && cacheData.Any())
             return Ok(_mapper.Map<List<StoreDto>>(cacheData));
 
         cacheData = await _mediator.Send(new GetStoresQuery());
