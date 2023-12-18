@@ -7,7 +7,7 @@ public interface IStoreInfoRepository
     List<Store> GetStoresByType(string storeType);
     List<Store> GetStoresByStreet(string street);
     Address GetStoreAddressByPhoneNumber(string phoneNumber);
-    Store GetStoreByWorkingHours(int storeTypeId, DayOfWeek day, TimeSpan time);
+    Store GetStoreByWorkingHours(string storeType, DayOfWeek day, TimeSpan time);
     List<string> GetAdministratorsLastNameByStoreType(string storeType);
     int GetStoreTypeCount(string storeType);
 }

@@ -60,11 +60,11 @@ public class StoreInfoRepository : IStoreInfoRepository
     }
 
 
-    public Store GetStoreByWorkingHours(int storeTypeId, DayOfWeek day, TimeSpan time)
+    public Store GetStoreByWorkingHours(string storeType, DayOfWeek day, TimeSpan time)
     {
         var store = _context.Stores
             .Include(s => s.WorkingHours)
-            .FirstOrDefault(s => s.StoreTypeId == storeTypeId &&
+            .FirstOrDefault(s => s.StoreType.Name == storeType &&
                                  s.WorkingHours.DayOfWeek == day &&
                                  s.WorkingHours.OpeningTime.TimeOfDay <= time &&
                                  s.WorkingHours.ClosingTime.TimeOfDay >= time);
@@ -74,7 +74,7 @@ public class StoreInfoRepository : IStoreInfoRepository
             return store;
         }
         
-        throw new NotFoundException(nameof(Store), storeTypeId);
+        throw new NotFoundException(nameof(Store), storeType);
     }
 
     public List<string> GetAdministratorsLastNameByStoreType(string storeType)

@@ -45,9 +45,9 @@ public class StoreInfoController : ControllerBase
 
     [HttpGet("ByTypeAndHours/{storeTypeId}/{day}/{time}")]
     // [Authorize]
-    public ActionResult<StoreDto> GetStoreByWorkingHours(int storeTypeId, DayOfWeek day, TimeSpan time)
+    public ActionResult<StoreDto> GetStoreByWorkingHours(string storeType, DayOfWeek day, TimeSpan time)
     {
-        var store = _storeService.GetStoreByWorkingHours(storeTypeId, day, time);
+        var store = _storeService.GetStoreByWorkingHours(storeType, day, time);
         return Ok(_mapper.Map<StoreDto>(store));
     }
 
